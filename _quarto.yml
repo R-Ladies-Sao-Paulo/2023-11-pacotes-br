@@ -26,8 +26,6 @@ website:
     contents:
       - href: index.qmd
         text: "Página inicial"
-      - href: mensagens.qmd
-
       - section: "Informações sobre o Espaço"
         contents:
            - como-chegar.qmd
