@@ -6,5 +6,100 @@ format:
   rladies-revealjs:
     footer: "Slides feitos com [Quarto](https://quarto.org/docs/presentations/revealjs/index.html) e [Quarto R-Ladies Theme](https://github.com/beatrizmilz/quarto-rladies-theme#quarto-r-ladies-theme)."
 incremental: false
+knitr:
+  opts_chunk:
+    echo: true
+    message: false
+    warning: false
+    error: false
+    cache: true
 ---
+
+## Pacote geobr
+
+-   O pacote **geobr** disponibiliza funções para obter diversas bases de dados **espaciais** oficiais do Brasil.
+
+-   O pacote foi desenvolvido e é mantido pela equipe do [IPEA - Instituto de Pesquisa Econômica Aplicada](https://www.ipea.gov.br/portal/).
+
+-   Você pode saber mais no repositório do pacote no GitHub: <https://ipeagit.github.io/geobr/>
+
+# Funções importantes
+
+-   `read_country()`: Delimitação do Brasil
+
+-   `read_state()`: Delimitação dos estados do Brasil
+
+-   `read_state("SP")`: Delimitação de um estado específico, usando a sigla como argumento
+
+-   `read_municipality()`: Delimitação de todos os municípios do Brasil. É uma base pesada!
+
+-   `read_municipality(code_muni = 3550308)`: Delimitação de um município específico, usando o código do IBGE do município.
+
+## Consultando todas as funções disponíveis
+
+-   Função `list_geobr()`
+
+```{r}
+#| echo: false
+geobr::list_geobr() |> 
+  dplyr::select(1, 2, 4) |> 
+  reactable::reactable(pagination = TRUE, 
+                       defaultPageSize = 5, class = "smaller")
+```
+
+## Com o geobr, trabalhamos com dados vetoriais!
+
+-   **Pontos**: localização de uma escola, ponto de coleta, etc.
+
+-   **Linhas**: ruas/estradas/rodovias, rios, etc.
+
+-   **Polígonos**: delimitação de cidades, estados, países, etc.
+
+## Conceitos importantes: Vetor x Raster
+
+![](img/vector-raster_1644589693.jpeg){fig-align="center"}
+
+::: footer
+Fonte da imagem: <https://guides.lib.uw.edu/>
+:::
+
+## Usamos uma nova classe de dados: sf!
+
+[![](img/sf_horst.png){fig-align="center" width="90%"}](https://github.com/allisonhorst/stats-illustrations)
+
+::: footer
+Fonte da imagem: <https://github.com/allisonhorst/stats-illustrations>
+:::
+
+
+## Exemplo
+
+```{r}
+# Carregando pacotes necessários
+library(geobr)
+library(sf)
+library(tidyverse)
+```
+
+
+
+
+```{r}
+# Lendo os dados da delimitação dos estados brasileiros
+brasil_ufs <- read_state(showProgress = FALSE)
+```
+
+
+```{r}
+# Classe do objeto
+class(brasil_ufs)
+```
+
+
+## Explorando o objeto
+
+```{r}
+glimpse(brasil_ufs)
+```
+
 
