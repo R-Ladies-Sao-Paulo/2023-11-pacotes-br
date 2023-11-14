@@ -18,7 +18,7 @@
     "href": "slides.html",
     "title": "Slides e materiais",
     "section": "",
-    "text": "Slide\nMinistrante\n\n\n\n\n\nConhecendo as R-Ladies São Paulo\n??"
+    "text": "Slide\nMinistrante\n\n\n\n\nConhecendo as R-Ladies São Paulo\n??\n\n\nIntrodução ao pacote odbr\nHaydee Svab\n\n\nIntrodução ao pacote geobr\nBeatriz Milz"
   },
   {
     "objectID": "slides.html#agradecimentos",
@@ -131,5 +131,103 @@
     "title": "Conhecendo a R-Ladies São Paulo",
     "section": "Saiba mais sobre a R-Ladies",
     "text": "Saiba mais sobre a R-Ladies\n\nR-Ladies Global: Website,  Twitter\nR-Ladies São Paulo:\n\nBlog: https://rladies-sp.org/\n Linkedin\n\n Twitter\n Instagram\n Facebook\n Meetup\n GitHub\n Youtube\n\n\n\n\n\n\n\n\nSlides feitos com Quarto e Quarto R-Ladies Theme."
+  },
+  {
+    "objectID": "apoio.html#apoio-financeiro",
+    "href": "apoio.html#apoio-financeiro",
+    "title": "Apoio",
+    "section": "Apoio financeiro",
+    "text": "Apoio financeiro\n\n\n\nR Consortium Logo"
+  },
+  {
+    "objectID": "mensagem-auxilios.html",
+    "href": "mensagem-auxilios.html",
+    "title": "Auxílio financeiro",
+    "section": "",
+    "text": "Para quem solicitou o auxílio transporte, será destinado o valor que foi solicitado no formulário.\nO valor de auxílio será disponibilizado preferencialmente ao chegar no evento (formato de reembolso). Ao checar no evento, procure a Beatriz Milz, que faz parte da equipe organizadora. Ela estará responsável por fazer as transferências dos valores (preferencialmente via PIX).\nCaso a sua participação seja inviabilizada nesta modalidade de reembolso ao chegar no evento, nos avise para que possamos alinhar outras formas de transferir o valor."
+  },
+  {
+    "objectID": "mensagem-auxilios.html#auxílio-transporte",
+    "href": "mensagem-auxilios.html#auxílio-transporte",
+    "title": "Auxílio financeiro",
+    "section": "",
+    "text": "Para quem solicitou o auxílio transporte, será destinado o valor que foi solicitado no formulário.\nO valor de auxílio será disponibilizado preferencialmente ao chegar no evento (formato de reembolso). Ao checar no evento, procure a Beatriz Milz, que faz parte da equipe organizadora. Ela estará responsável por fazer as transferências dos valores (preferencialmente via PIX).\nCaso a sua participação seja inviabilizada nesta modalidade de reembolso ao chegar no evento, nos avise para que possamos alinhar outras formas de transferir o valor."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "",
+    "text": "Essa oficina acontecerá presencialmente, em São Paulo, em 22/11/2023.\nInscrições através da plataforma Meetup."
+  },
+  {
+    "objectID": "index.html#boas-vindas",
+    "href": "index.html#boas-vindas",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "",
+    "text": "Essa oficina acontecerá presencialmente, em São Paulo, em 22/11/2023.\nInscrições através da plataforma Meetup."
+  },
+  {
+    "objectID": "index.html#café-colaborativo.",
+    "href": "index.html#café-colaborativo.",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "Café colaborativo.",
+    "text": "Café colaborativo.\nNeste evento, teremos um café colaborativo. As pessoas participantes podem levar comes e bebes para compartilhar com o grupo, mas não é obrigatório!"
+  },
+  {
+    "objectID": "index.html#sorteio",
+    "href": "index.html#sorteio",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "Sorteio",
+    "text": "Sorteio\nNeste evento, teremos o sorteio de:\n\n1 camiseta da R-Ladies São Paulo"
+  },
+  {
+    "objectID": "index.html#espaço-gugudadados",
+    "href": "index.html#espaço-gugudadados",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "Espaço Gugudadados",
+    "text": "Espaço Gugudadados\nO Espaço Gugudadados é um espaço feito para facilitar a participação de mães e pessoas cuidadoras. Este espaço fica próximo à sala principal da atividade, e contará com brinquedos e pessoas adultas que acompanharão as crianças durante o evento principal. Também teremos a presença de uma professora remunerada para acompanhar as crianças.\nCaso queira saber mais sobre como foi em eventos anteriores, leia aqui."
+  },
+  {
+    "objectID": "index.html#auxílio-transporte",
+    "href": "index.html#auxílio-transporte",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "Auxílio transporte",
+    "text": "Auxílio transporte\nNeste evento, teremos auxílio transporte para algumas pessoas participantes. Caso você tenha solicitado o auxílio, entre em contato com a equipe da organização durante o evento para que o valor seja transferido."
+  },
+  {
+    "objectID": "index.html#protocolos-referentes-à-covid-19",
+    "href": "index.html#protocolos-referentes-à-covid-19",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "Protocolos referentes à COVID-19",
+    "text": "Protocolos referentes à COVID-19\nRecomendamos que pessoas adultas que compareçam ao eventos tenham tomado pelo menos 2 doses da vacina contra Covid-19."
+  },
+  {
+    "objectID": "index.html#código-de-conduta",
+    "href": "index.html#código-de-conduta",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "Código de conduta",
+    "text": "Código de conduta\nEste código de conduta aplica-se a todos os espaços R-Ladies, incluindo: meetups, Twitter, Slack, listas de discussão, tanto online como offline: Clique aqui para acessar o código de conduta."
+  },
+  {
+    "objectID": "index.html#mensagens",
+    "href": "index.html#mensagens",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "Mensagens",
+    "text": "Mensagens\n\nPreencham a lista de presença! O link será disponibilizado durante a atividade. Essa lista será usada para gerar os certificados e para realizar os sorteios :)\nTemos um grupo no telegram! Caso queiram entrar, peça para alguma das pessoas organizadoras."
+  },
+  {
+    "objectID": "index.html#siga-a-r-ladies-são-paulo",
+    "href": "index.html#siga-a-r-ladies-são-paulo",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "Siga a R-Ladies São Paulo!",
+    "text": "Siga a R-Ladies São Paulo!\n\nBlog\nLinkedin\nMeetup\nYoutube\nTwitter\nInstagram"
+  },
+  {
+    "objectID": "index.html#apoio",
+    "href": "index.html#apoio",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "Apoio",
+    "text": "Apoio\n\n\n\n\n\n\n\n\nR Consortium Logo"
   }
 ]
