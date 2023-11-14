@@ -1,0 +1,16 @@
+---
+title: "Perguntas frequentes"
+author: "R-Ladies São Paulo"
+format: html
+editor: visual
+---
+
+## Formato
+
+-   **O evento será transmitido online?**
+
+Este evento não será transmitido online, será apenas presencial.
+
+Caso queira ver a gravação dos eventos online passados, confira [no nosso canal do Youtube](https://www.youtube.com/@RLadiesSaoPaulo/streams).
+
+Recomendamos também seguir as atividades de outros capítulos da R-Ladies, como a [R-Ladies Goiânia](https://www.instagram.com/rladiesgyn/).

@@ -1,0 +1,10 @@
+---
+title: "Slides e materiais"
+author: "R-Ladies São Paulo"
+format: html
+editor: visual
+---
+
+| Slide                                                                                                                                                   | Ministrante                      |     |
+|------------------------------------|------------------|------------------|
+| [Conhecendo as R-Ladies São Paulo](slide-rladies.qmd){target="_blank"}                                                                                  | ??                      

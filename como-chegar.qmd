@@ -1,0 +1,22 @@
+---
+title: "Como chegar"
+author: "R-Ladies São Paulo"
+format: html
+editor: visual
+---
+
+O evento acontecerá no Airbnb, em São Paulo - SP.
+
+## Como chegar
+
+Endereço: [Rua Aspicuelta 422, cj 51. Alto de Pinheiros, São Paulo - SP](https://maps.app.goo.gl/koZ4kZUd1t536XVU6)
+
+<center>
+
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.308552274317!2d-46.6894931!3d-23.5573593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5797fbf1e0a7%3A0x88c00e292adb5efb!2sR.%20Aspicuelta%2C%20422%20-%20Alto%20de%20Pinheiros%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005433-010!5e0!3m2!1sen!2sbr!4v1699924742027!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</iframe>
+
+</center>
+
