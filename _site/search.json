@@ -140,20 +140,6 @@
     "text": "Apoio\n\n\n\n\n\n\n\n\nR Consortium Logo"
   },
   {
-    "objectID": "mensagem-auxilios.html",
-    "href": "mensagem-auxilios.html",
-    "title": "Auxílio financeiro",
-    "section": "",
-    "text": "Para quem solicitou o auxílio transporte, será destinado o valor que foi solicitado no formulário.\nO valor de auxílio será disponibilizado preferencialmente ao chegar no evento (formato de reembolso). Ao checar no evento, procure a Beatriz Milz, que faz parte da equipe organizadora. Ela estará responsável por fazer as transferências dos valores (preferencialmente via PIX).\nCaso a sua participação seja inviabilizada nesta modalidade de reembolso ao chegar no evento, nos avise para que possamos alinhar outras formas de transferir o valor."
-  },
-  {
-    "objectID": "mensagem-auxilios.html#auxílio-transporte",
-    "href": "mensagem-auxilios.html#auxílio-transporte",
-    "title": "Auxílio financeiro",
-    "section": "",
-    "text": "Para quem solicitou o auxílio transporte, será destinado o valor que foi solicitado no formulário.\nO valor de auxílio será disponibilizado preferencialmente ao chegar no evento (formato de reembolso). Ao checar no evento, procure a Beatriz Milz, que faz parte da equipe organizadora. Ela estará responsável por fazer as transferências dos valores (preferencialmente via PIX).\nCaso a sua participação seja inviabilizada nesta modalidade de reembolso ao chegar no evento, nos avise para que possamos alinhar outras formas de transferir o valor."
-  },
-  {
     "objectID": "perguntas-frequentes.html",
     "href": "perguntas-frequentes.html",
     "title": "Perguntas frequentes",
@@ -168,11 +154,25 @@
     "text": "O evento será transmitido online?\n\nEste evento não será transmitido online, será apenas presencial.\nCaso queira ver a gravação dos eventos online passados, confira no nosso canal do Youtube.\nRecomendamos também seguir as atividades de outros capítulos da R-Ladies, como a R-Ladies Goiânia."
   },
   {
+    "objectID": "mensagem-auxilios.html",
+    "href": "mensagem-auxilios.html",
+    "title": "Auxílio financeiro",
+    "section": "",
+    "text": "Para quem solicitou o auxílio transporte, será destinado o valor que foi solicitado no formulário.\nO valor de auxílio será disponibilizado preferencialmente ao chegar no evento (formato de reembolso). Ao checar no evento, procure a Beatriz Milz, que faz parte da equipe organizadora. Ela estará responsável por fazer as transferências dos valores (preferencialmente via PIX).\nCaso a sua participação seja inviabilizada nesta modalidade de reembolso ao chegar no evento, nos avise para que possamos alinhar outras formas de transferir o valor."
+  },
+  {
+    "objectID": "mensagem-auxilios.html#auxílio-transporte",
+    "href": "mensagem-auxilios.html#auxílio-transporte",
+    "title": "Auxílio financeiro",
+    "section": "",
+    "text": "Para quem solicitou o auxílio transporte, será destinado o valor que foi solicitado no formulário.\nO valor de auxílio será disponibilizado preferencialmente ao chegar no evento (formato de reembolso). Ao checar no evento, procure a Beatriz Milz, que faz parte da equipe organizadora. Ela estará responsável por fazer as transferências dos valores (preferencialmente via PIX).\nCaso a sua participação seja inviabilizada nesta modalidade de reembolso ao chegar no evento, nos avise para que possamos alinhar outras formas de transferir o valor."
+  },
+  {
     "objectID": "slides.html",
     "href": "slides.html",
     "title": "Slides e materiais",
     "section": "",
-    "text": "Slide\nMinistrante\n\n\n\n\nConhecendo as R-Ladies São Paulo\n??\n\n\nIntrodução ao pacote odbr\nHaydee Svab\n\n\nIntrodução ao pacote geobr\nBeatriz Milz"
+    "text": "Slide\nMinistrante\n\n\n\n\nConhecendo as R-Ladies São Paulo\nLuana Antunes\n\n\nPacotes em R de dados brasileiros\nBeatriz Milz\n\n\nIntrodução ao pacote odbr\nHaydee Svab\n\n\nIntrodução ao pacote geobr\nBeatriz Milz"
   },
   {
     "objectID": "apoio.html#apoio-financeiro",
