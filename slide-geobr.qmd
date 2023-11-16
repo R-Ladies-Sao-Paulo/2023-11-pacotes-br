@@ -13,6 +13,7 @@ knitr:
     warning: false
     error: false
     cache: true
+    fig-align: center
 ---
 
 ## Pacote geobr
@@ -47,14 +48,6 @@ geobr::list_geobr() |>
                        defaultPageSize = 5, class = "smaller")
 ```
 
-## Com o geobr, trabalhamos com dados vetoriais!
-
--   **Pontos**: localização de uma escola, ponto de coleta, etc.
-
--   **Linhas**: ruas/estradas/rodovias, rios, etc.
-
--   **Polígonos**: delimitação de cidades, estados, países, etc.
-
 ## Conceitos importantes: Vetor x Raster
 
 ![](img/vector-raster_1644589693.jpeg){fig-align="center"}
@@ -62,6 +55,14 @@ geobr::list_geobr() |>
 ::: footer
 Fonte da imagem: <https://guides.lib.uw.edu/>
 :::
+
+## Com o geobr, trabalhamos com dados vetoriais!
+
+-   **Pontos**: localização de uma escola, ponto de coleta, etc.
+
+-   **Linhas**: ruas/estradas/rodovias, rios, etc.
+
+-   **Polígonos**: delimitação de cidades, estados, países, etc.
 
 ## Usamos uma nova classe de dados: sf!
 
@@ -71,8 +72,9 @@ Fonte da imagem: <https://guides.lib.uw.edu/>
 Fonte da imagem: <https://github.com/allisonhorst/stats-illustrations>
 :::
 
+# Vamos para alguns exemplos!!
 
-## Exemplo
+## Ler a delimitação dos estados brasileiros
 
 ```{r}
 # Carregando pacotes necessários
@@ -81,20 +83,15 @@ library(sf)
 library(tidyverse)
 ```
 
-
-
-
 ```{r}
 # Lendo os dados da delimitação dos estados brasileiros
 brasil_ufs <- read_state(showProgress = FALSE)
 ```
 
-
 ```{r}
 # Classe do objeto
 class(brasil_ufs)
 ```
-
 
 ## Explorando o objeto
 
@@ -103,3 +100,192 @@ glimpse(brasil_ufs)
 ```
 
 
+
+## Visualizando os estados brasileiros
+
+```{r}
+brasil_ufs |> 
+  ggplot() +
+  geom_sf()
+```
+
+## Filtrando o estado de São Paulo
+
+```{r}
+estado_sp <- brasil_ufs |> 
+  filter(abbrev_state == "SP") 
+
+estado_sp |>
+  ggplot() +
+  geom_sf()
+```
+
+
+# E os municípios?
+
+```{r}
+# Carregando municípios
+brasil_municipios <- read_municipality(showProgress = FALSE)
+```
+
+## Explorando o objeto
+
+```{r}
+glimpse(brasil_municipios)
+```
+
+## Como saber o código IBGE de um município?
+
+-   Você pode consultar o código IBGE de um município no site do [IBGE](https://www.ibge.gov.br/explica/codigos-dos-municipios.php).
+
+[![](img/codigo-muni.png){fig-align="center" width="80%"}](https://www.ibge.gov.br/explica/codigos-dos-municipios.php)
+
+
+## Filtrando o município de São Paulo
+
+```{r}
+muni_sp <- brasil_municipios |> 
+  filter(code_muni == 3550308) 
+```
+
+## Visualizando o município de São Paulo
+
+```{r}
+muni_sp |> 
+  ggplot() +
+  geom_sf()
+```
+
+
+## E escolas?
+
+
+```{r}
+escolas_brasil <- read_schools(showProgress = FALSE)
+```
+
+
+
+## Explorando o objeto
+
+```{r}
+glimpse(escolas_brasil)
+```
+
+## Escolas no município de São Paulo
+
+```{r}
+escolas_saopaulo <- escolas_brasil |> 
+  filter(abbrev_state == "SP",
+         name_muni == "São Paulo") 
+```
+
+
+## Escolas por `government_level`
+
+```{r}
+escolas_saopaulo |> 
+  count(government_level)
+```
+
+## Escolas que oferecem Ensino Médio
+
+```{r}
+ensino_medio_sao_paulo <- escolas_saopaulo |> 
+  filter(str_detect(education_level, "Ensino Médio"))
+```
+
+
+# Vamos visualizar?
+
+## Visualizando as escolas
+
+```{r}
+escolas_saopaulo |> 
+  ggplot() +
+  geom_sf()
+```
+
+## Visualizando as escolas e o município
+
+```{r}
+escolas_saopaulo |> 
+  ggplot() +
+  geom_sf(data = muni_sp) +
+  geom_sf()
+```
+
+  
+## Visualizando as escolas por `government_level`
+
+
+```{r}
+escolas_saopaulo |> 
+  ggplot() +
+  geom_sf(data = muni_sp) +
+  geom_sf(aes(color = government_level))
+```
+
+## Visualizando as escolas por `government_level`
+
+```{r}
+escolas_saopaulo |> 
+  ggplot() +
+  geom_sf(data = muni_sp) +
+  geom_sf(aes(color = government_level), show.legend = FALSE) +
+  facet_wrap(~government_level)
+```
+
+
+## Visualizando as escolas que oferecem Ensino Médio
+
+```{r}
+ensino_medio_sao_paulo |>
+  ggplot() +
+  geom_sf(data = muni_sp) +
+  geom_sf(aes(color = government_level, alpha = 0.1), show.legend = FALSE) +
+  facet_wrap( ~ government_level)
+```
+
+
+
+
+## Deixando mais bonito
+
+
+```{r}
+#| echo: false
+library(ggspatial)
+ensino_medio_sao_paulo |>
+  filter(government_level %in% c("Estadual", "Privada")) |>
+  ggplot() +
+  geom_sf(data = muni_sp) +
+  geom_sf(aes(color = government_level, alpha = 0.1), show.legend = FALSE) +
+  facet_wrap(~ government_level) +
+  labs(x = "Longitude",
+       y = "Latitude") +
+  scale_fill_viridis_d(begin = 0.2, end = 0.9) +
+  theme(legend.spacing.x = unit(1.0, 'cm')) +
+  theme_bw() +
+  theme(
+    panel.grid.major = element_line(
+      color = gray(0.9),
+      linetype = "dashed",
+      size = 0.1
+    ),
+    panel.background = element_rect(fill = "white")
+  ) +
+  theme(
+    axis.text.y = element_text(
+      angle = 90,
+      hjust = 0.5,
+      size = 8
+    ),
+    axis.text.x = element_text(size = 8),
+    axis.title.y = element_text(size = rel(0.8)),
+    axis.title.x = element_text(size = rel(0.8)),
+    legend.title = element_text(size = rel(0.8))
+  )
+```
+
+## Materiais

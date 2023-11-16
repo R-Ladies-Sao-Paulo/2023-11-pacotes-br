@@ -435,12 +435,19 @@ Beatriz Milz
 <ul>
 <li>Função <code>list_geobr()</code></li>
 </ul>
-<div class="cell" data-hash="slide-geobr_cache/revealjs/unnamed-chunk-1_b74fd89540804edcb68d8db08049da76">
+<div class="cell" data-layout-align="center" data-hash="slide-geobr_cache/revealjs/unnamed-chunk-1_02e8bbf2d1d8f49fb5cb5d3412045248">
 <div class="cell-output-display">
 
-<div class="reactable html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-8c25b94f2911f78cce9f" style="width:auto;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-8c25b94f2911f78cce9f">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"function":["`read_country`","`read_region`","`read_state`","`read_meso_region`","`read_micro_region`","`read_intermediate_region`","`read_immediate_region`","`read_municipality`","`read_municipal_seat`","`read_weighting_area`","`read_census_tract`","`read_statistical_grid`","`read_metro_area`","`read_urban_area`","`read_amazon`","`read_biomes`","`read_conservation_units`","`read_disaster_risk_area`","`read_indigenous_land`","`read_semiarid`","`read_health_facilities`","`read_health_region`","`read_neighborhood`","`read_schools`","`read_comparable_areas`","`read_urban_concentrations`","`read_pop_arrangements`"],"geography":["Country","Region","States","Meso region","Micro region","Intermediate region","Immediate region","Municipality","Municipality seats (sedes municipais)","Census weighting area (área de ponderação)","Census tract (setor censitário)","Statistical Grid of 200 x 200 meters","Metropolitan areas","Urban footprints","Brazil's Legal Amazon","Biomes","Environmental Conservation Units","Disaster risk areas","Indigenous lands","Semi Arid region","Health facilities","Health regions and macro regions","Neighborhood limits","Schools","Historically comparable municipalities, aka Areas minimas comparaveis (AMCs)","Urban concentration areas (concentrações urbanas)","Population arrangements (arranjos populacioanis)"],"source":["IBGE","IBGE","IBGE","IBGE","IBGE","IBGE","IBGE","IBGE","IBGE","IBGE","IBGE","IBGE","IBGE","IBGE","MMA","IBGE","MMA","CEMADEN and IBGE","FUNAI","IBGE","CNES, DataSUS","DataSUS","IBGE","INEP","IBGE","IBGE","IBGE"]},"columns":[{"id":"function","name":"function","type":"character"},{"id":"geography","name":"geography","type":"character"},{"id":"source","name":"source","type":"character"}],"defaultPageSize":5,"className":"smaller","dataKey":"b125dea94351ad9a9e2bfbcbd78e3c47"},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
+<div class="reactable html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-5a51998085a24e105654" style="width:auto;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-5a51998085a24e105654">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"function":["`read_country`","`read_region`","`read_state`","`read_meso_region`","`read_micro_region`","`read_intermediate_region`","`read_immediate_region`","`read_municipality`","`read_municipal_seat`","`read_weighting_area`","`read_census_tract`","`read_statistical_grid`","`read_metro_area`","`read_urban_area`","`read_amazon`","`read_biomes`","`read_conservation_units`","`read_disaster_risk_area`","`read_indigenous_land`","`read_semiarid`","`read_health_facilities`","`read_health_region`","`read_neighborhood`","`read_schools`","`read_comparable_areas`","`read_urban_concentrations`","`read_pop_arrangements`"],"geography":["Country","Region","States","Meso region","Micro region","Intermediate region","Immediate region","Municipality","Municipality seats (sedes municipais)","Census weighting area (área de ponderação)","Census tract (setor censitário)","Statistical Grid of 200 x 200 meters","Metropolitan areas","Urban footprints","Brazil's Legal Amazon","Biomes","Environmental Conservation Units","Disaster risk areas","Indigenous lands","Semi Arid region","Health facilities","Health regions and macro regions","Neighborhood limits","Schools","Historically comparable municipalities, aka Areas minimas comparaveis (AMCs)","Urban concentration areas (concentrações urbanas)","Population arrangements (arranjos populacioanis)"],"source":["IBGE","IBGE","IBGE","IBGE","IBGE","IBGE","IBGE","IBGE","IBGE","IBGE","IBGE","IBGE","IBGE","IBGE","MMA","IBGE","MMA","CEMADEN and IBGE","FUNAI","IBGE","CNES, DataSUS","DataSUS","IBGE","INEP","IBGE","IBGE","IBGE"]},"columns":[{"id":"function","name":"function","type":"character"},{"id":"geography","name":"geography","type":"character"},{"id":"source","name":"source","type":"character"}],"defaultPageSize":5,"className":"smaller","dataKey":"b125dea94351ad9a9e2bfbcbd78e3c47"},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
 </div>
+</div>
+</section>
+<section id="conceitos-importantes-vetor-x-raster" class="slide level2">
+<h2>Conceitos importantes: Vetor x Raster</h2>
+
+<img data-src="img/vector-raster_1644589693.jpeg" class="r-stretch quarto-figure-center"><div class="footer">
+<p>Fonte da imagem: <a href="https://guides.lib.uw.edu/" class="uri">https://guides.lib.uw.edu/</a></p>
 </div>
 </section>
 <section id="com-o-geobr-trabalhamos-com-dados-vetoriais" class="slide level2">
@@ -451,33 +458,31 @@ Beatriz Milz
 <li><p><strong>Polígonos</strong>: delimitação de cidades, estados, países, etc.</p></li>
 </ul>
 </section>
-<section id="conceitos-importantes-vetor-x-raster" class="slide level2">
-<h2>Conceitos importantes: Vetor x Raster</h2>
-
-<img data-src="img/vector-raster_1644589693.jpeg" class="r-stretch quarto-figure-center"><div class="footer">
-<p>Fonte da imagem: <a href="https://guides.lib.uw.edu/" class="uri">https://guides.lib.uw.edu/</a></p>
-</div>
-</section>
 <section id="usamos-uma-nova-classe-de-dados-sf" class="slide level2">
 <h2>Usamos uma nova classe de dados: sf!</h2>
 
 <img data-src="img/sf_horst.png" style="width:90.0%" class="r-stretch quarto-figure-center"><div class="footer">
 <p>Fonte da imagem: <a href="https://github.com/allisonhorst/stats-illustrations" class="uri">https://github.com/allisonhorst/stats-illustrations</a></p>
 </div>
+</section></section>
+<section>
+<section id="vamos-para-alguns-exemplos" class="title-slide slide level1 center">
+<h1>Vamos para alguns exemplos!!</h1>
+
 </section>
-<section id="exemplo" class="slide level2">
-<h2>Exemplo</h2>
-<div class="cell" data-hash="slide-geobr_cache/revealjs/unnamed-chunk-2_ddc3346d18c347415755c350c242d319">
+<section id="ler-a-delimitação-dos-estados-brasileiros" class="slide level2">
+<h2>Ler a delimitação dos estados brasileiros</h2>
+<div class="cell" data-layout-align="center" data-hash="slide-geobr_cache/revealjs/unnamed-chunk-2_dabdcb259ec268273e81dca33bfb578d">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="co"># Carregando pacotes necessários</span></span>
 <span id="cb1-2"><a href="#cb1-2"></a><span class="fu">library</span>(geobr)</span>
 <span id="cb1-3"><a href="#cb1-3"></a><span class="fu">library</span>(sf)</span>
 <span id="cb1-4"><a href="#cb1-4"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell" data-hash="slide-geobr_cache/revealjs/unnamed-chunk-3_1f04d15ac63f800323083caba56581a6">
+<div class="cell" data-layout-align="center" data-hash="slide-geobr_cache/revealjs/unnamed-chunk-3_07c6b7bbf7e85eb9d124513b7ddaff70">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="co"># Lendo os dados da delimitação dos estados brasileiros</span></span>
 <span id="cb2-2"><a href="#cb2-2"></a>brasil_ufs <span class="ot">&lt;-</span> <span class="fu">read_state</span>(<span class="at">showProgress =</span> <span class="cn">FALSE</span>)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell" data-hash="slide-geobr_cache/revealjs/unnamed-chunk-4_e71035df69b21889bd043e1a95e196a4">
+<div class="cell" data-layout-align="center" data-hash="slide-geobr_cache/revealjs/unnamed-chunk-4_398a7a78e4477c5644085762d4abf104">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="co"># Classe do objeto</span></span>
 <span id="cb3-2"><a href="#cb3-2"></a><span class="fu">class</span>(brasil_ufs)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -487,7 +492,7 @@ Beatriz Milz
 </section>
 <section id="explorando-o-objeto" class="slide level2">
 <h2>Explorando o objeto</h2>
-<div class="cell" data-hash="slide-geobr_cache/revealjs/unnamed-chunk-5_1e85e9e7fd116c52dc3fad5e7fbdc594">
+<div class="cell" data-layout-align="center" data-hash="slide-geobr_cache/revealjs/unnamed-chunk-5_44d9a92f60722e621e6c4799f1657e35">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="fu">glimpse</span>(brasil_ufs)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Rows: 27
@@ -500,6 +505,205 @@ $ name_region  &lt;chr&gt; "Norte", "Norte", "Norte", "Norte", "Norte", "Norte",
 $ geom         &lt;MULTIPOLYGON [°]&gt; MULTIPOLYGON (((-63.32721 -..., MULTIPOLYGON…</code></pre>
 </div>
 </div>
+</section>
+<section id="visualizando-os-estados-brasileiros" class="slide level2">
+<h2>Visualizando os estados brasileiros</h2>
+<div class="cell" data-layout-align="center" data-hash="slide-geobr_cache/revealjs/unnamed-chunk-6_de078904bfd756b2ccdd547cfc8352e1">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a>brasil_ufs <span class="sc">|&gt;</span> </span>
+<span id="cb7-2"><a href="#cb7-2"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb7-3"><a href="#cb7-3"></a>  <span class="fu">geom_sf</span>()</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="slide-geobr_files/figure-revealjs/unnamed-chunk-6-1.png" width="960" class="r-stretch quarto-figure-center"></section>
+<section id="filtrando-o-estado-de-são-paulo" class="slide level2">
+<h2>Filtrando o estado de São Paulo</h2>
+<div class="cell" data-layout-align="center" data-hash="slide-geobr_cache/revealjs/unnamed-chunk-7_633c699c510c31a7bb6b499807327e3f">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a>estado_sp <span class="ot">&lt;-</span> brasil_ufs <span class="sc">|&gt;</span> </span>
+<span id="cb8-2"><a href="#cb8-2"></a>  <span class="fu">filter</span>(abbrev_state <span class="sc">==</span> <span class="st">"SP"</span>) </span>
+<span id="cb8-3"><a href="#cb8-3"></a></span>
+<span id="cb8-4"><a href="#cb8-4"></a>estado_sp <span class="sc">|&gt;</span></span>
+<span id="cb8-5"><a href="#cb8-5"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb8-6"><a href="#cb8-6"></a>  <span class="fu">geom_sf</span>()</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="slide-geobr_files/figure-revealjs/unnamed-chunk-7-1.png" width="960" class="r-stretch quarto-figure-center"></section></section>
+<section>
+<section id="e-os-municípios" class="title-slide slide level1 center">
+<h1>E os municípios?</h1>
+<div class="cell" data-layout-align="center" data-hash="slide-geobr_cache/revealjs/unnamed-chunk-8_5a9425f2c0be1f763faf2d84a3ae6837">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a><span class="co"># Carregando municípios</span></span>
+<span id="cb9-2"><a href="#cb9-2"></a>brasil_municipios <span class="ot">&lt;-</span> <span class="fu">read_municipality</span>(<span class="at">showProgress =</span> <span class="cn">FALSE</span>)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="explorando-o-objeto-1" class="slide level2">
+<h2>Explorando o objeto</h2>
+<div class="cell" data-layout-align="center" data-hash="slide-geobr_cache/revealjs/unnamed-chunk-9_e81d49bfcd7bbce600bd01926ca5fb02">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a><span class="fu">glimpse</span>(brasil_municipios)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Rows: 5,567
+Columns: 5
+$ code_muni    &lt;dbl&gt; 1100015, 1100023, 1100031, 1100049, 1100056, 1100064, 110…
+$ name_muni    &lt;chr&gt; "Alta Floresta D'oeste", "Ariquemes", "Cabixi", "Cacoal",…
+$ code_state   &lt;chr&gt; "11", "11", "11", "11", "11", "11", "11", "11", "11", "11…
+$ abbrev_state &lt;chr&gt; "RO", "RO", "RO", "RO", "RO", "RO", "RO", "RO", "RO", "RO…
+$ geom         &lt;MULTIPOLYGON [°]&gt; MULTIPOLYGON (((-62.2462 -1..., MULTIPOLYGON…</code></pre>
+</div>
+</div>
+</section>
+<section id="como-saber-o-código-ibge-de-um-município" class="slide level2">
+<h2>Como saber o código IBGE de um município?</h2>
+<ul>
+<li>Você pode consultar o código IBGE de um município no site do <a href="https://www.ibge.gov.br/explica/codigos-dos-municipios.php">IBGE</a>.</li>
+</ul>
+
+<img data-src="img/codigo-muni.png" style="width:80.0%" class="r-stretch quarto-figure-center"></section>
+<section id="filtrando-o-município-de-são-paulo" class="slide level2">
+<h2>Filtrando o município de São Paulo</h2>
+<div class="cell" data-layout-align="center" data-hash="slide-geobr_cache/revealjs/unnamed-chunk-10_89d93c144517af4417250347a534fe57">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1"></a>muni_sp <span class="ot">&lt;-</span> brasil_municipios <span class="sc">|&gt;</span> </span>
+<span id="cb12-2"><a href="#cb12-2"></a>  <span class="fu">filter</span>(code_muni <span class="sc">==</span> <span class="dv">3550308</span>) </span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="visualizando-o-município-de-são-paulo" class="slide level2">
+<h2>Visualizando o município de São Paulo</h2>
+<div class="cell" data-layout-align="center" data-hash="slide-geobr_cache/revealjs/unnamed-chunk-11_aca3a79095f654338efdf0dc6859aee5">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1"></a>muni_sp <span class="sc">|&gt;</span> </span>
+<span id="cb13-2"><a href="#cb13-2"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb13-3"><a href="#cb13-3"></a>  <span class="fu">geom_sf</span>()</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="slide-geobr_files/figure-revealjs/unnamed-chunk-11-1.png" width="960" class="r-stretch quarto-figure-center"></section>
+<section id="e-escolas" class="slide level2">
+<h2>E escolas?</h2>
+<div class="cell" data-layout-align="center" data-hash="slide-geobr_cache/revealjs/unnamed-chunk-12_759e96b2d7a90b65cb540e9fb0fbe617">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1"></a>escolas_brasil <span class="ot">&lt;-</span> <span class="fu">read_schools</span>(<span class="at">showProgress =</span> <span class="cn">FALSE</span>)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="explorando-o-objeto-2" class="slide level2">
+<h2>Explorando o objeto</h2>
+<div class="cell" data-layout-align="center" data-hash="slide-geobr_cache/revealjs/unnamed-chunk-13_c871c3fb7e14085bd8a2058d2b6481e8">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1"></a><span class="fu">glimpse</span>(escolas_brasil)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Rows: 222,936
+Columns: 19
+$ abbrev_state                   &lt;chr&gt; "RO", "RO", "RO", "RO", "RO", "RO", "RO…
+$ name_muni                      &lt;chr&gt; "Porto Velho", "Porto Velho", "Porto Ve…
+$ code_school                    &lt;int&gt; 11000023, 11000040, 11000058, 11000082,…
+$ name_school                    &lt;chr&gt; "EEEE ABNAEL MACHADO DE LIMA - CENE", "…
+$ education_level                &lt;chr&gt; "Ensino Fundamental", "Educação Infanti…
+$ education_level_others         &lt;chr&gt; "Atendimento Educacional Especializado"…
+$ admin_category                 &lt;chr&gt; "Pública", "Pública", "Privada", "Priva…
+$ address                        &lt;chr&gt; "AVENIDA AMAZONAS, 6492 ZONA LESTE. TIR…
+$ phone_number                   &lt;chr&gt; "(69) 992083054", "(69) 32135237", "(69…
+$ government_level               &lt;chr&gt; "Estadual", "Municipal", "Privada", "Pr…
+$ private_school_type            &lt;chr&gt; "Não Informado", "Não Informado", "Part…
+$ private_government_partnership &lt;chr&gt; "Não", "Não", "Não", "Não", "Não", "Não…
+$ regulated_education_council    &lt;chr&gt; "Não", "Sim", "Sim", "Sim", "Sim", "Sim…
+$ service_restriction            &lt;chr&gt; "ESCOLA ATENDE EXCLUSIVAMENTE ALUNOS CO…
+$ size                           &lt;chr&gt; "Entre 51 e 200 matrículas de escolariz…
+$ urban                          &lt;chr&gt; "Urbana", "Urbana", "Urbana", "Urbana",…
+$ location_type                  &lt;chr&gt; "A escola não está em área de localizaç…
+$ date_update                    &lt;chr&gt; "2020-10-18", "2020-10-18", "2020-10-18…
+$ geom                           &lt;POINT [°]&gt; POINT (-63.85401 -8.758459), POIN…</code></pre>
+</div>
+</div>
+</section>
+<section id="escolas-no-município-de-são-paulo" class="slide level2">
+<h2>Escolas no município de São Paulo</h2>
+<div class="cell" data-layout-align="center" data-hash="slide-geobr_cache/revealjs/unnamed-chunk-14_7d526c78d8bf21c42fc8bfd671dff1f7">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1"></a>escolas_saopaulo <span class="ot">&lt;-</span> escolas_brasil <span class="sc">|&gt;</span> </span>
+<span id="cb17-2"><a href="#cb17-2"></a>  <span class="fu">filter</span>(abbrev_state <span class="sc">==</span> <span class="st">"SP"</span>,</span>
+<span id="cb17-3"><a href="#cb17-3"></a>         name_muni <span class="sc">==</span> <span class="st">"São Paulo"</span>) </span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="escolas-por-government_level" class="slide level2">
+<h2>Escolas por <code>government_level</code></h2>
+<div class="cell" data-layout-align="center" data-hash="slide-geobr_cache/revealjs/unnamed-chunk-15_0a5d37cfaf54300f61a473076c87658b">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1"></a>escolas_saopaulo <span class="sc">|&gt;</span> </span>
+<span id="cb18-2"><a href="#cb18-2"></a>  <span class="fu">count</span>(government_level)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Simple feature collection with 4 features and 2 fields
+Geometry type: MULTIPOINT
+Dimension:     XY
+Bounding box:  xmin: -46.8074 ymin: -23.90918 xmax: -46.36614 ymax: -23.3996
+Geodetic CRS:  SIRGAS 2000
+  government_level    n                           geom
+1         Estadual 1275 MULTIPOINT ((-46.75558 -23....
+2          Federal    4 MULTIPOINT ((-46.62169 -23....
+3        Municipal 1563 MULTIPOINT ((-46.7141 -23.8...
+4          Privada 5272 MULTIPOINT ((-46.7133 -23.8...</code></pre>
+</div>
+</div>
+</section>
+<section id="escolas-que-oferecem-ensino-médio" class="slide level2">
+<h2>Escolas que oferecem Ensino Médio</h2>
+<div class="cell" data-layout-align="center" data-hash="slide-geobr_cache/revealjs/unnamed-chunk-16_b358aa1833687bd1defb2f32c765f5bb">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1"></a>ensino_medio_sao_paulo <span class="ot">&lt;-</span> escolas_saopaulo <span class="sc">|&gt;</span> </span>
+<span id="cb20-2"><a href="#cb20-2"></a>  <span class="fu">filter</span>(<span class="fu">str_detect</span>(education_level, <span class="st">"Ensino Médio"</span>))</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section></section>
+<section>
+<section id="vamos-visualizar" class="title-slide slide level1 center">
+<h1>Vamos visualizar?</h1>
+
+</section>
+<section id="visualizando-as-escolas" class="slide level2">
+<h2>Visualizando as escolas</h2>
+<div class="cell" data-layout-align="center" data-hash="slide-geobr_cache/revealjs/unnamed-chunk-17_36a99d2c1fa34c5a092cf478d01a5a34">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1"></a>escolas_saopaulo <span class="sc">|&gt;</span> </span>
+<span id="cb21-2"><a href="#cb21-2"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb21-3"><a href="#cb21-3"></a>  <span class="fu">geom_sf</span>()</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="slide-geobr_files/figure-revealjs/unnamed-chunk-17-1.png" width="960" class="r-stretch quarto-figure-center"></section>
+<section id="visualizando-as-escolas-e-o-município" class="slide level2">
+<h2>Visualizando as escolas e o município</h2>
+<div class="cell" data-layout-align="center" data-hash="slide-geobr_cache/revealjs/unnamed-chunk-18_fbb8629bc1e93e35c6c35c92ce93d455">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1"></a>escolas_saopaulo <span class="sc">|&gt;</span> </span>
+<span id="cb22-2"><a href="#cb22-2"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb22-3"><a href="#cb22-3"></a>  <span class="fu">geom_sf</span>(<span class="at">data =</span> muni_sp) <span class="sc">+</span></span>
+<span id="cb22-4"><a href="#cb22-4"></a>  <span class="fu">geom_sf</span>()</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="slide-geobr_files/figure-revealjs/unnamed-chunk-18-1.png" width="960" class="r-stretch quarto-figure-center"></section>
+<section id="visualizando-as-escolas-por-government_level" class="slide level2">
+<h2>Visualizando as escolas por <code>government_level</code></h2>
+<div class="cell" data-layout-align="center" data-hash="slide-geobr_cache/revealjs/unnamed-chunk-19_a7cc8008b86202f409565d2a080ea2db">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1"></a>escolas_saopaulo <span class="sc">|&gt;</span> </span>
+<span id="cb23-2"><a href="#cb23-2"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb23-3"><a href="#cb23-3"></a>  <span class="fu">geom_sf</span>(<span class="at">data =</span> muni_sp) <span class="sc">+</span></span>
+<span id="cb23-4"><a href="#cb23-4"></a>  <span class="fu">geom_sf</span>(<span class="fu">aes</span>(<span class="at">color =</span> government_level))</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="slide-geobr_files/figure-revealjs/unnamed-chunk-19-1.png" width="960" class="r-stretch quarto-figure-center"></section>
+<section id="visualizando-as-escolas-por-government_level-1" class="slide level2">
+<h2>Visualizando as escolas por <code>government_level</code></h2>
+<div class="cell" data-layout-align="center" data-hash="slide-geobr_cache/revealjs/unnamed-chunk-20_ab1b141d0fe6ddd8699e4a5989fb66fb">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1"></a>escolas_saopaulo <span class="sc">|&gt;</span> </span>
+<span id="cb24-2"><a href="#cb24-2"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb24-3"><a href="#cb24-3"></a>  <span class="fu">geom_sf</span>(<span class="at">data =</span> muni_sp) <span class="sc">+</span></span>
+<span id="cb24-4"><a href="#cb24-4"></a>  <span class="fu">geom_sf</span>(<span class="fu">aes</span>(<span class="at">color =</span> government_level), <span class="at">show.legend =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb24-5"><a href="#cb24-5"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>government_level)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="slide-geobr_files/figure-revealjs/unnamed-chunk-20-1.png" width="960" class="r-stretch quarto-figure-center"></section>
+<section id="visualizando-as-escolas-que-oferecem-ensino-médio" class="slide level2">
+<h2>Visualizando as escolas que oferecem Ensino Médio</h2>
+<div class="cell" data-layout-align="center" data-hash="slide-geobr_cache/revealjs/unnamed-chunk-21_537b143f05fea99cde95abf4b2921bdf">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1"></a>ensino_medio_sao_paulo <span class="sc">|&gt;</span></span>
+<span id="cb25-2"><a href="#cb25-2"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb25-3"><a href="#cb25-3"></a>  <span class="fu">geom_sf</span>(<span class="at">data =</span> muni_sp) <span class="sc">+</span></span>
+<span id="cb25-4"><a href="#cb25-4"></a>  <span class="fu">geom_sf</span>(<span class="fu">aes</span>(<span class="at">color =</span> government_level, <span class="at">alpha =</span> <span class="fl">0.1</span>), <span class="at">show.legend =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb25-5"><a href="#cb25-5"></a>  <span class="fu">facet_wrap</span>( <span class="sc">~</span> government_level)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="slide-geobr_files/figure-revealjs/unnamed-chunk-21-1.png" width="960" class="r-stretch quarto-figure-center"></section>
+<section id="deixando-mais-bonito" class="slide level2">
+<h2>Deixando mais bonito</h2>
+
+<img data-src="slide-geobr_files/figure-revealjs/unnamed-chunk-22-1.png" width="960" class="r-stretch quarto-figure-center"></section>
+<section id="materiais" class="slide level2">
+<h2>Materiais</h2>
 
 
 <img src="site_libs/quarto-contrib/quarto-project/beatrizmilz/rladies/logo.png" class="slide-logo r-stretch"><div class="footer footer-default">

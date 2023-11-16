@@ -46,7 +46,7 @@
     "href": "slide-geobr.html#explorando-o-objeto",
     "title": "Conhecendo o pacote geobr",
     "section": "Explorando o objeto",
-    "text": "Explorando o objeto\n\nglimpse(brasil_ufs)\n\nRows: 27\nColumns: 6\n$ code_state   &lt;dbl&gt; 11, 12, 13, 14, 15, 16, 17, 21, 22, 23, 24, 25, 26, 27, 2…\n$ abbrev_state &lt;chr&gt; \"RO\", \"AC\", \"AM\", \"RR\", \"PA\", \"AP\", \"TO\", \"MA\", \"PI\", \"CE…\n$ name_state   &lt;chr&gt; \"Rondônia\", \"Acre\", \"Amazonas\", \"Roraima\", \"Pará\", \"Amapá…\n$ code_region  &lt;dbl&gt; 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, …\n$ name_region  &lt;chr&gt; \"Norte\", \"Norte\", \"Norte\", \"Norte\", \"Norte\", \"Norte\", \"No…\n$ geom         &lt;MULTIPOLYGON [°]&gt; MULTIPOLYGON (((-63.32721 -..., MULTIPOLYGON…\n\n\n\n\n\nSlides feitos com Quarto e Quarto R-Ladies Theme."
+    "text": "Explorando o objeto\n\nglimpse(brasil_ufs)\n\nRows: 27\nColumns: 6\n$ code_state   &lt;dbl&gt; 11, 12, 13, 14, 15, 16, 17, 21, 22, 23, 24, 25, 26, 27, 2…\n$ abbrev_state &lt;chr&gt; \"RO\", \"AC\", \"AM\", \"RR\", \"PA\", \"AP\", \"TO\", \"MA\", \"PI\", \"CE…\n$ name_state   &lt;chr&gt; \"Rondônia\", \"Acre\", \"Amazonas\", \"Roraima\", \"Pará\", \"Amapá…\n$ code_region  &lt;dbl&gt; 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, …\n$ name_region  &lt;chr&gt; \"Norte\", \"Norte\", \"Norte\", \"Norte\", \"Norte\", \"Norte\", \"No…\n$ geom         &lt;MULTIPOLYGON [°]&gt; MULTIPOLYGON (((-63.32721 -..., MULTIPOLYGON…"
   },
   {
     "objectID": "como-chegar.html",
@@ -138,6 +138,62 @@
     "title": "Pacotes em R de dados brasileiros",
     "section": "Apoio",
     "text": "Apoio\n\n\n\n\n\n\n\n\nR Consortium Logo"
+  },
+  {
+    "objectID": "introducao-pacotes-br.html#o-que-abordaremos-hoje",
+    "href": "introducao-pacotes-br.html#o-que-abordaremos-hoje",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "O que abordaremos hoje?",
+    "text": "O que abordaremos hoje?\n\nObjetivo: apresentar alguns pacotes em R de dados brasileiros.\nAprofundaremos em dois pacotes: odbr e geobr."
+  },
+  {
+    "objectID": "introducao-pacotes-br.html#o-que-são-pacotes-em-r",
+    "href": "introducao-pacotes-br.html#o-que-são-pacotes-em-r",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "O que são pacotes em R?",
+    "text": "O que são pacotes em R?\n\nPacotes são conjuntos de funções e dados que estendem a funcionalidade base do R.\nPodem ser instalados diretamente do CRAN (Comprehensive R Archive Network) ou de repositórios do GitHub.\nPodem ser desenvolvidos por qualquer pessoa.\nPodem ser usados para diferentes finalidades."
+  },
+  {
+    "objectID": "introducao-pacotes-br.html#o-que-queremos-dizer-com-dados-brasileiros",
+    "href": "introducao-pacotes-br.html#o-que-queremos-dizer-com-dados-brasileiros",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "O que queremos dizer com “dados brasileiros”?",
+    "text": "O que queremos dizer com “dados brasileiros”?\n\nDados que se referem ao Brasil, à população brasileira, aos seus estados, municípios, etc.\nPodem ser dados de diferentes fontes: IBGE, INEP, Datasus, MMA, CEMADEN, FUNAI, etc.\nGeralmente são dados produzidos por algum órgão público, ou com atuação relacionada à alguma atividade de interesse público.\nPodem ser dados em diferentes escalas: dados nacionais, estaduais, municipais, etc."
+  },
+  {
+    "objectID": "introducao-pacotes-br.html#sidrar",
+    "href": "introducao-pacotes-br.html#sidrar",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "sidrar",
+    "text": "sidrar\n\nPacote para obter dados do SIDRA (Sistema IBGE de Recuperação Automática).\nAcesso: https://github.com/rpradosiqueira/sidrar\n✅ Disponível no CRAN\n✅ Disponível no GitHub"
+  },
+  {
+    "objectID": "introducao-pacotes-br.html#censobr",
+    "href": "introducao-pacotes-br.html#censobr",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "censobr",
+    "text": "censobr\n\nPacote para obter de dados do Censo Demográfico Brasileiro.\nAcesso: https://ipeagit.github.io/censobr/\n✅ Disponível no CRAN\n✅ Disponível no GitHub"
+  },
+  {
+    "objectID": "introducao-pacotes-br.html#qualr",
+    "href": "introducao-pacotes-br.html#qualr",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "qualR",
+    "text": "qualR\n\nPacote para obter de dados sobre a poluição do ar em São Paulo e no Rio de Janeiro.\nAcesso: https://docs.ropensci.org/qualR/\n❌ Disponível no CRAN\n✅ Disponível no GitHub\n✅ Revisado por pares na ROpenSci."
+  },
+  {
+    "objectID": "introducao-pacotes-br.html#mananciais",
+    "href": "introducao-pacotes-br.html#mananciais",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "Mananciais",
+    "text": "Mananciais\n\nPacote para obter dados sobre os mananciais de abastecimento da Região Metropolitana de São Paulo.\nAcesso: https://beatrizmilz.github.io/mananciais/\n❌ Disponível no CRAN\n✅ Disponível no GitHub"
+  },
+  {
+    "objectID": "introducao-pacotes-br.html#conhecem-outros",
+    "href": "introducao-pacotes-br.html#conhecem-outros",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "Conhecem outros??",
+    "text": "Conhecem outros??\n\n…\n\n\n\n\nSlides feitos com Quarto e Quarto R-Ladies Theme."
   },
   {
     "objectID": "perguntas-frequentes.html",
@@ -259,66 +315,143 @@
     "text": "Saiba mais sobre a R-Ladies\n\nR-Ladies Global: Website,  Twitter\nR-Ladies São Paulo:\n\nBlog: https://rladies-sp.org/\n Linkedin\n\n Twitter\n Instagram\n Facebook\n Meetup\n GitHub\n Youtube\n\n\n\n\n\n\n\n\nSlides feitos com Quarto e Quarto R-Ladies Theme."
   },
   {
-    "objectID": "introducao-pacotes-br.html#o-que-são-pacotes-em-r",
-    "href": "introducao-pacotes-br.html#o-que-são-pacotes-em-r",
-    "title": "Pacotes em R de dados brasileiros",
-    "section": "O que são pacotes em R?",
-    "text": "O que são pacotes em R?\n\nPacotes são conjuntos de funções e dados que estendem a funcionalidade base do R.\nPodem ser instalados diretamente do CRAN (Comprehensive R Archive Network) ou de repositórios do GitHub.\nPodem ser desenvolvidos por qualquer pessoa.\nPodem ser usados para diferentes finalidades."
+    "objectID": "slide-geobr.html#visualizando",
+    "href": "slide-geobr.html#visualizando",
+    "title": "Conhecendo o pacote geobr",
+    "section": "Visualizando",
+    "text": "Visualizando\n\nbrasil_ufs |&gt; \n  ggplot() +\n  geom_sf()\n\n\n\n\n\n\n\nSlides feitos com Quarto e Quarto R-Ladies Theme."
   },
   {
-    "objectID": "introducao-pacotes-br.html#o-que-abordaremos-hoje",
-    "href": "introducao-pacotes-br.html#o-que-abordaremos-hoje",
-    "title": "Pacotes em R de dados brasileiros",
-    "section": "O que abordaremos hoje?",
-    "text": "O que abordaremos hoje?\n\nObjetivo: apresentar alguns pacotes em R de dados brasileiros.\nAprofundaremos em dois pacotes: odbr e geobr."
+    "objectID": "slide-geobr.html#visualizando-os-estados-brasileiros",
+    "href": "slide-geobr.html#visualizando-os-estados-brasileiros",
+    "title": "Conhecendo o pacote geobr",
+    "section": "Visualizando os estados brasileiros",
+    "text": "Visualizando os estados brasileiros\n\nbrasil_ufs |&gt; \n  ggplot() +\n  geom_sf()"
   },
   {
-    "objectID": "introducao-pacotes-br.html#o-que-queremos-dizer-com-dados-brasileiros",
-    "href": "introducao-pacotes-br.html#o-que-queremos-dizer-com-dados-brasileiros",
-    "title": "Pacotes em R de dados brasileiros",
-    "section": "O que queremos dizer com “dados brasileiros”?",
-    "text": "O que queremos dizer com “dados brasileiros”?\n\nDados que se referem ao Brasil, à população brasileira, aos seus estados, municípios, etc.\nPodem ser dados de diferentes fontes: IBGE, INEP, Datasus, MMA, CEMADEN, FUNAI, etc.\nGeralmente são dados produzidos por algum órgão público, ou com atuação relacionada à alguma atividade de interesse público.\nPodem ser dados em diferentes escalas: dados nacionais, estaduais, municipais, etc."
+    "objectID": "slide-geobr.html#explorando-o-objeto-1",
+    "href": "slide-geobr.html#explorando-o-objeto-1",
+    "title": "Conhecendo o pacote geobr",
+    "section": "Explorando o objeto",
+    "text": "Explorando o objeto\n\nglimpse(brasil_municipios)\n\nRows: 5,567\nColumns: 5\n$ code_muni    &lt;dbl&gt; 1100015, 1100023, 1100031, 1100049, 1100056, 1100064, 110…\n$ name_muni    &lt;chr&gt; \"Alta Floresta D'oeste\", \"Ariquemes\", \"Cabixi\", \"Cacoal\",…\n$ code_state   &lt;chr&gt; \"11\", \"11\", \"11\", \"11\", \"11\", \"11\", \"11\", \"11\", \"11\", \"11…\n$ abbrev_state &lt;chr&gt; \"RO\", \"RO\", \"RO\", \"RO\", \"RO\", \"RO\", \"RO\", \"RO\", \"RO\", \"RO…\n$ geom         &lt;MULTIPOLYGON [°]&gt; MULTIPOLYGON (((-62.2462 -1..., MULTIPOLYGON…"
   },
   {
-    "objectID": "introducao-pacotes-br.html#sidrar",
-    "href": "introducao-pacotes-br.html#sidrar",
-    "title": "Pacotes em R de dados brasileiros",
-    "section": "sidrar",
-    "text": "sidrar\n\nPacote para obter dados do SIDRA (Sistema IBGE de Recuperação Automática).\nAcesso: https://github.com/rpradosiqueira/sidrar\n✅ Disponível no CRAN\n✅ Disponível no GitHub"
+    "objectID": "slide-geobr.html#como-saber-o-código-ibge-de-um-município",
+    "href": "slide-geobr.html#como-saber-o-código-ibge-de-um-município",
+    "title": "Conhecendo o pacote geobr",
+    "section": "Como saber o código IBGE de um município?",
+    "text": "Como saber o código IBGE de um município?\n\nVocê pode consultar o código IBGE de um município no site do IBGE."
   },
   {
-    "objectID": "introducao-pacotes-br.html#censobr",
-    "href": "introducao-pacotes-br.html#censobr",
-    "title": "Pacotes em R de dados brasileiros",
-    "section": "censobr",
-    "text": "censobr\n\nPacote para obter de dados do Censo Demográfico Brasileiro.\nAcesso: https://ipeagit.github.io/censobr/\n✅ Disponível no CRAN\n✅ Disponível no GitHub"
+    "objectID": "slide-geobr.html#filtrando-o-município-de-são-paulo",
+    "href": "slide-geobr.html#filtrando-o-município-de-são-paulo",
+    "title": "Conhecendo o pacote geobr",
+    "section": "Filtrando o município de São Paulo",
+    "text": "Filtrando o município de São Paulo\n\nmuni_sp &lt;- brasil_municipios |&gt; \n  filter(code_muni == 3550308)"
   },
   {
-    "objectID": "introducao-pacotes-br.html#qualr",
-    "href": "introducao-pacotes-br.html#qualr",
-    "title": "Pacotes em R de dados brasileiros",
-    "section": "qualR",
-    "text": "qualR\n\nPacote para obter de dados sobre a poluição do ar em São Paulo e no Rio de Janeiro.\nAcesso: https://docs.ropensci.org/qualR/\n❌ Disponível no CRAN\n✅ Disponível no GitHub\n✅ Revisado por pares na ROpenSci."
+    "objectID": "slide-geobr.html#visualizando-o-município-de-são-paulo",
+    "href": "slide-geobr.html#visualizando-o-município-de-são-paulo",
+    "title": "Conhecendo o pacote geobr",
+    "section": "Visualizando o município de São Paulo",
+    "text": "Visualizando o município de São Paulo\n\nmuni_sp |&gt; \n  ggplot() +\n  geom_sf()"
   },
   {
-    "objectID": "introducao-pacotes-br.html#mananciais",
-    "href": "introducao-pacotes-br.html#mananciais",
-    "title": "Pacotes em R de dados brasileiros",
-    "section": "Mananciais",
-    "text": "Mananciais\n\nPacote para obter dados sobre os mananciais de abastecimento da Região Metropolitana de São Paulo.\nAcesso: https://beatrizmilz.github.io/mananciais/\n❌ Disponível no CRAN\n✅ Disponível no GitHub"
+    "objectID": "slide-geobr.html#filtrando-o-estado-de-são-paulo",
+    "href": "slide-geobr.html#filtrando-o-estado-de-são-paulo",
+    "title": "Conhecendo o pacote geobr",
+    "section": "Filtrando o estado de São Paulo",
+    "text": "Filtrando o estado de São Paulo\n\nestado_sp &lt;- brasil_ufs |&gt; \n  filter(abbrev_state == \"SP\") \n\nestado_sp |&gt;\n  ggplot() +\n  geom_sf()"
   },
   {
-    "objectID": "introducao-pacotes-br.html#conhecem-outros",
-    "href": "introducao-pacotes-br.html#conhecem-outros",
-    "title": "Pacotes em R de dados brasileiros",
-    "section": "Conhecem outros??",
-    "text": "Conhecem outros??\n\n…\n\n\n\n\nSlides feitos com Quarto e Quarto R-Ladies Theme."
+    "objectID": "slide-geobr.html#ler-a-delimitação-dos-estados-brasileiros",
+    "href": "slide-geobr.html#ler-a-delimitação-dos-estados-brasileiros",
+    "title": "Conhecendo o pacote geobr",
+    "section": "Ler a delimitação dos estados brasileiros",
+    "text": "Ler a delimitação dos estados brasileiros\n\n# Carregando pacotes necessários\nlibrary(geobr)\nlibrary(sf)\nlibrary(tidyverse)\n\n\n# Lendo os dados da delimitação dos estados brasileiros\nbrasil_ufs &lt;- read_state(showProgress = FALSE)\n\n\n# Classe do objeto\nclass(brasil_ufs)\n\n[1] \"sf\"         \"data.frame\""
   },
   {
-    "objectID": "introducao-pacotes-br.html#extra-base-dos-dados",
-    "href": "introducao-pacotes-br.html#extra-base-dos-dados",
-    "title": "Pacotes em R de dados brasileiros",
-    "section": "Extra: Base dos dados",
-    "text": "Extra: Base dos dados\n\nhttps://github.com/basedosdados/mais/#usando-em-r\n\n\n\n\nSlides feitos com Quarto e Quarto R-Ladies Theme."
+    "objectID": "slide-geobr.html#e-escolas",
+    "href": "slide-geobr.html#e-escolas",
+    "title": "Conhecendo o pacote geobr",
+    "section": "E escolas?",
+    "text": "E escolas?\n\nescolas_brasil &lt;- read_schools(showProgress = FALSE)"
+  },
+  {
+    "objectID": "slide-geobr.html#explorando-o-objeto-2",
+    "href": "slide-geobr.html#explorando-o-objeto-2",
+    "title": "Conhecendo o pacote geobr",
+    "section": "Explorando o objeto",
+    "text": "Explorando o objeto\n\nglimpse(escolas_brasil)\n\nRows: 222,936\nColumns: 19\n$ abbrev_state                   &lt;chr&gt; \"RO\", \"RO\", \"RO\", \"RO\", \"RO\", \"RO\", \"RO…\n$ name_muni                      &lt;chr&gt; \"Porto Velho\", \"Porto Velho\", \"Porto Ve…\n$ code_school                    &lt;int&gt; 11000023, 11000040, 11000058, 11000082,…\n$ name_school                    &lt;chr&gt; \"EEEE ABNAEL MACHADO DE LIMA - CENE\", \"…\n$ education_level                &lt;chr&gt; \"Ensino Fundamental\", \"Educação Infanti…\n$ education_level_others         &lt;chr&gt; \"Atendimento Educacional Especializado\"…\n$ admin_category                 &lt;chr&gt; \"Pública\", \"Pública\", \"Privada\", \"Priva…\n$ address                        &lt;chr&gt; \"AVENIDA AMAZONAS, 6492 ZONA LESTE. TIR…\n$ phone_number                   &lt;chr&gt; \"(69) 992083054\", \"(69) 32135237\", \"(69…\n$ government_level               &lt;chr&gt; \"Estadual\", \"Municipal\", \"Privada\", \"Pr…\n$ private_school_type            &lt;chr&gt; \"Não Informado\", \"Não Informado\", \"Part…\n$ private_government_partnership &lt;chr&gt; \"Não\", \"Não\", \"Não\", \"Não\", \"Não\", \"Não…\n$ regulated_education_council    &lt;chr&gt; \"Não\", \"Sim\", \"Sim\", \"Sim\", \"Sim\", \"Sim…\n$ service_restriction            &lt;chr&gt; \"ESCOLA ATENDE EXCLUSIVAMENTE ALUNOS CO…\n$ size                           &lt;chr&gt; \"Entre 51 e 200 matrículas de escolariz…\n$ urban                          &lt;chr&gt; \"Urbana\", \"Urbana\", \"Urbana\", \"Urbana\",…\n$ location_type                  &lt;chr&gt; \"A escola não está em área de localizaç…\n$ date_update                    &lt;chr&gt; \"2020-10-18\", \"2020-10-18\", \"2020-10-18…\n$ geom                           &lt;POINT [°]&gt; POINT (-63.85401 -8.758459), POIN…"
+  },
+  {
+    "objectID": "slide-geobr.html#escolas-no-município-de-são-paulo",
+    "href": "slide-geobr.html#escolas-no-município-de-são-paulo",
+    "title": "Conhecendo o pacote geobr",
+    "section": "Escolas no município de São Paulo",
+    "text": "Escolas no município de São Paulo\n\nescolas_saopaulo &lt;- escolas_brasil |&gt; \n  filter(abbrev_state == \"SP\",\n         name_muni == \"São Paulo\")"
+  },
+  {
+    "objectID": "slide-geobr.html#escolas-por-government_level",
+    "href": "slide-geobr.html#escolas-por-government_level",
+    "title": "Conhecendo o pacote geobr",
+    "section": "Escolas por government_level",
+    "text": "Escolas por government_level\n\nescolas_saopaulo |&gt; \n  count(government_level)\n\nSimple feature collection with 4 features and 2 fields\nGeometry type: MULTIPOINT\nDimension:     XY\nBounding box:  xmin: -46.8074 ymin: -23.90918 xmax: -46.36614 ymax: -23.3996\nGeodetic CRS:  SIRGAS 2000\n  government_level    n                           geom\n1         Estadual 1275 MULTIPOINT ((-46.75558 -23....\n2          Federal    4 MULTIPOINT ((-46.62169 -23....\n3        Municipal 1563 MULTIPOINT ((-46.7141 -23.8...\n4          Privada 5272 MULTIPOINT ((-46.7133 -23.8..."
+  },
+  {
+    "objectID": "slide-geobr.html#visualizando-as-escolas",
+    "href": "slide-geobr.html#visualizando-as-escolas",
+    "title": "Conhecendo o pacote geobr",
+    "section": "Visualizando as escolas",
+    "text": "Visualizando as escolas\n\nescolas_saopaulo |&gt; \n  ggplot() +\n  geom_sf()"
+  },
+  {
+    "objectID": "slide-geobr.html#escolas-que-oferecem-ensino-médio",
+    "href": "slide-geobr.html#escolas-que-oferecem-ensino-médio",
+    "title": "Conhecendo o pacote geobr",
+    "section": "Escolas que oferecem Ensino Médio",
+    "text": "Escolas que oferecem Ensino Médio\n\nensino_medio_sao_paulo &lt;- escolas_saopaulo |&gt; \n  filter(str_detect(education_level, \"Ensino Médio\"))"
+  },
+  {
+    "objectID": "slide-geobr.html#visualizando-as-escolas-por-government_level",
+    "href": "slide-geobr.html#visualizando-as-escolas-por-government_level",
+    "title": "Conhecendo o pacote geobr",
+    "section": "Visualizando as escolas por government_level",
+    "text": "Visualizando as escolas por government_level\n\nescolas_saopaulo |&gt; \n  ggplot() +\n  geom_sf(data = muni_sp) +\n  geom_sf(aes(color = government_level))"
+  },
+  {
+    "objectID": "slide-geobr.html#visualizando-as-escolas-por-government_level-1",
+    "href": "slide-geobr.html#visualizando-as-escolas-por-government_level-1",
+    "title": "Conhecendo o pacote geobr",
+    "section": "Visualizando as escolas por government_level",
+    "text": "Visualizando as escolas por government_level\n\nescolas_saopaulo |&gt; \n  ggplot() +\n  geom_sf(data = muni_sp) +\n  geom_sf(aes(color = government_level), show.legend = FALSE) +\n  facet_wrap(~government_level)"
+  },
+  {
+    "objectID": "slide-geobr.html#visualizando-as-escolas-que-oferecem-ensino-médio",
+    "href": "slide-geobr.html#visualizando-as-escolas-que-oferecem-ensino-médio",
+    "title": "Conhecendo o pacote geobr",
+    "section": "Visualizando as escolas que oferecem Ensino Médio",
+    "text": "Visualizando as escolas que oferecem Ensino Médio\n\nensino_medio_sao_paulo |&gt;\n  ggplot() +\n  geom_sf(data = muni_sp) +\n  geom_sf(aes(color = government_level, alpha = 0.1), show.legend = FALSE) +\n  facet_wrap( ~ government_level)"
+  },
+  {
+    "objectID": "slide-geobr.html#deixando-mais-bonito",
+    "href": "slide-geobr.html#deixando-mais-bonito",
+    "title": "Conhecendo o pacote geobr",
+    "section": "Deixando mais bonito",
+    "text": "Deixando mais bonito"
+  },
+  {
+    "objectID": "slide-geobr.html#materiais",
+    "href": "slide-geobr.html#materiais",
+    "title": "Conhecendo o pacote geobr",
+    "section": "Materiais",
+    "text": "Materiais\n\n\n\nSlides feitos com Quarto e Quarto R-Ladies Theme."
+  },
+  {
+    "objectID": "slide-geobr.html#visualizando-as-escolas-e-o-município",
+    "href": "slide-geobr.html#visualizando-as-escolas-e-o-município",
+    "title": "Conhecendo o pacote geobr",
+    "section": "Visualizando as escolas e o município",
+    "text": "Visualizando as escolas e o município\n\nescolas_saopaulo |&gt; \n  ggplot() +\n  geom_sf(data = muni_sp) +\n  geom_sf()"
   }
 ]
