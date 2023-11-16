@@ -7,3 +7,79 @@ format:
     footer: "Slides feitos com [Quarto](https://quarto.org/docs/presentations/revealjs/index.html) e [Quarto R-Ladies Theme](https://github.com/beatrizmilz/quarto-rladies-theme#quarto-r-ladies-theme)."
 incremental: false
 ---
+
+## O que abordaremos hoje?
+
+- Objetivo: apresentar alguns pacotes em R de dados brasileiros.
+
+- Aprofundaremos em dois pacotes: `odbr` e `geobr`.
+
+## O que são pacotes em R?
+
+- Pacotes são conjuntos de funções e dados que estendem a funcionalidade base do R.
+
+- Podem ser instalados diretamente do CRAN (Comprehensive R Archive Network) ou de repositórios do GitHub.
+
+- Podem ser desenvolvidos por **qualquer pessoa**.
+
+- Podem ser usados para **diferentes finalidades**.
+
+## O que queremos dizer com "dados brasileiros"?
+
+- Dados que se referem ao Brasil, à população brasileira, aos seus estados, municípios, etc.
+
+- Podem ser dados de diferentes fontes: IBGE, INEP, Datasus, MMA, CEMADEN, FUNAI, etc. 
+
+- Geralmente são dados produzidos por algum órgão público, ou com atuação relacionada à alguma atividade de interesse público.
+
+- Podem ser dados em diferentes escalas: dados nacionais, estaduais, municipais, etc.
+
+# Vamos a alguns exemplos de pacotes!
+
+## sidrar
+
+- Pacote para obter dados do SIDRA (Sistema IBGE de Recuperação Automática).
+
+- Acesso: <https://github.com/rpradosiqueira/sidrar>
+
+- ✅ Disponível no CRAN
+
+- ✅ Disponível no GitHub
+
+## censobr
+
+- Pacote para obter de dados do Censo Demográfico Brasileiro. 
+
+- Acesso: <https://ipeagit.github.io/censobr/>
+
+- ✅ Disponível no CRAN
+
+- ✅ Disponível no GitHub
+
+
+## qualR
+
+- Pacote para obter de dados sobre a poluição do ar em São Paulo e no Rio de Janeiro. 
+
+- Acesso: <https://docs.ropensci.org/qualR/>
+
+- ❌ Disponível no CRAN
+
+- ✅ Disponível no GitHub
+
+- ✅ Revisado por pares na ROpenSci.
+
+## Mananciais
+
+- Pacote para obter dados sobre os mananciais de abastecimento da Região Metropolitana de São Paulo.
+
+- Acesso: <https://beatrizmilz.github.io/mananciais/> 
+
+- ❌ Disponível no CRAN
+
+- ✅ Disponível no GitHub
+
+
+## Conhecem outros??
+
+- ...

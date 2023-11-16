@@ -257,5 +257,68 @@
     "title": "Conhecendo a R-Ladies São Paulo",
     "section": "Saiba mais sobre a R-Ladies",
     "text": "Saiba mais sobre a R-Ladies\n\nR-Ladies Global: Website,  Twitter\nR-Ladies São Paulo:\n\nBlog: https://rladies-sp.org/\n Linkedin\n\n Twitter\n Instagram\n Facebook\n Meetup\n GitHub\n Youtube\n\n\n\n\n\n\n\n\nSlides feitos com Quarto e Quarto R-Ladies Theme."
+  },
+  {
+    "objectID": "introducao-pacotes-br.html#o-que-são-pacotes-em-r",
+    "href": "introducao-pacotes-br.html#o-que-são-pacotes-em-r",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "O que são pacotes em R?",
+    "text": "O que são pacotes em R?\n\nPacotes são conjuntos de funções e dados que estendem a funcionalidade base do R.\nPodem ser instalados diretamente do CRAN (Comprehensive R Archive Network) ou de repositórios do GitHub.\nPodem ser desenvolvidos por qualquer pessoa.\nPodem ser usados para diferentes finalidades."
+  },
+  {
+    "objectID": "introducao-pacotes-br.html#o-que-abordaremos-hoje",
+    "href": "introducao-pacotes-br.html#o-que-abordaremos-hoje",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "O que abordaremos hoje?",
+    "text": "O que abordaremos hoje?\n\nObjetivo: apresentar alguns pacotes em R de dados brasileiros.\nAprofundaremos em dois pacotes: odbr e geobr."
+  },
+  {
+    "objectID": "introducao-pacotes-br.html#o-que-queremos-dizer-com-dados-brasileiros",
+    "href": "introducao-pacotes-br.html#o-que-queremos-dizer-com-dados-brasileiros",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "O que queremos dizer com “dados brasileiros”?",
+    "text": "O que queremos dizer com “dados brasileiros”?\n\nDados que se referem ao Brasil, à população brasileira, aos seus estados, municípios, etc.\nPodem ser dados de diferentes fontes: IBGE, INEP, Datasus, MMA, CEMADEN, FUNAI, etc.\nGeralmente são dados produzidos por algum órgão público, ou com atuação relacionada à alguma atividade de interesse público.\nPodem ser dados em diferentes escalas: dados nacionais, estaduais, municipais, etc."
+  },
+  {
+    "objectID": "introducao-pacotes-br.html#sidrar",
+    "href": "introducao-pacotes-br.html#sidrar",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "sidrar",
+    "text": "sidrar\n\nPacote para obter dados do SIDRA (Sistema IBGE de Recuperação Automática).\nAcesso: https://github.com/rpradosiqueira/sidrar\n✅ Disponível no CRAN\n✅ Disponível no GitHub"
+  },
+  {
+    "objectID": "introducao-pacotes-br.html#censobr",
+    "href": "introducao-pacotes-br.html#censobr",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "censobr",
+    "text": "censobr\n\nPacote para obter de dados do Censo Demográfico Brasileiro.\nAcesso: https://ipeagit.github.io/censobr/\n✅ Disponível no CRAN\n✅ Disponível no GitHub"
+  },
+  {
+    "objectID": "introducao-pacotes-br.html#qualr",
+    "href": "introducao-pacotes-br.html#qualr",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "qualR",
+    "text": "qualR\n\nPacote para obter de dados sobre a poluição do ar em São Paulo e no Rio de Janeiro.\nAcesso: https://docs.ropensci.org/qualR/\n❌ Disponível no CRAN\n✅ Disponível no GitHub\n✅ Revisado por pares na ROpenSci."
+  },
+  {
+    "objectID": "introducao-pacotes-br.html#mananciais",
+    "href": "introducao-pacotes-br.html#mananciais",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "Mananciais",
+    "text": "Mananciais\n\nPacote para obter dados sobre os mananciais de abastecimento da Região Metropolitana de São Paulo.\nAcesso: https://beatrizmilz.github.io/mananciais/\n❌ Disponível no CRAN\n✅ Disponível no GitHub"
+  },
+  {
+    "objectID": "introducao-pacotes-br.html#conhecem-outros",
+    "href": "introducao-pacotes-br.html#conhecem-outros",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "Conhecem outros??",
+    "text": "Conhecem outros??\n\n…\n\n\n\n\nSlides feitos com Quarto e Quarto R-Ladies Theme."
+  },
+  {
+    "objectID": "introducao-pacotes-br.html#extra-base-dos-dados",
+    "href": "introducao-pacotes-br.html#extra-base-dos-dados",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "Extra: Base dos dados",
+    "text": "Extra: Base dos dados\n\nhttps://github.com/basedosdados/mais/#usando-em-r\n\n\n\n\nSlides feitos com Quarto e Quarto R-Ladies Theme."
   }
 ]
