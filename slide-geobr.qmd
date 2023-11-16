@@ -250,7 +250,9 @@ ensino_medio_sao_paulo |>
 
 
 
-## Deixando mais bonito
+## 
+
+Localização das escolas estaduais e escolas privadas no município de São Paulo, que oferecem Ensino Médio
 
 
 ```{r}
