@@ -161,11 +161,11 @@
     "text": "Visualizando as escolas que oferecem Ensino Médio\n\nensino_medio_sao_paulo |&gt;\n  ggplot() +\n  geom_sf(data = muni_sp) +\n  geom_sf(aes(color = government_level, alpha = 0.1), show.legend = FALSE) +\n  facet_wrap( ~ government_level)"
   },
   {
-    "objectID": "slide-geobr.html#deixando-mais-bonito",
-    "href": "slide-geobr.html#deixando-mais-bonito",
+    "objectID": "slide-geobr.html#section",
+    "href": "slide-geobr.html#section",
     "title": "Conhecendo o pacote geobr",
-    "section": "Deixando mais bonito",
-    "text": "Deixando mais bonito"
+    "section": "",
+    "text": "Localização das escolas estaduais e escolas privadas no município de São Paulo, que oferecem Ensino Médio"
   },
   {
     "objectID": "slide-geobr.html#materiais",
