@@ -539,11 +539,11 @@
     "text": "ecodados\n\nPacote R para acessar dados úteis para ecologia.\nATENÇÃO: Alguns dados são simulados! Leia a documentação da função para saber quais são.\nAcesso: https://paternogbc.github.io/ecodados/index.html\n✅ Disponível no GitHub"
   },
   {
-    "objectID": "slide-pacotes-br.html#base-dos-dados",
-    "href": "slide-pacotes-br.html#base-dos-dados",
+    "objectID": "slide-pacotes-br.html#rbcb",
+    "href": "slide-pacotes-br.html#rbcb",
     "title": "Pacotes em R de dados brasileiros",
-    "section": "Base dos dados",
-    "text": "Base dos dados\n\nO Base dos Dados é um projeto amplo.\nTem um pacote em R.\nAcesso: https://basedosdados.github.io/mais/"
+    "section": "rbcb",
+    "text": "rbcb\n\nPacote R para acessar dados do Banco Central do Brasil.\nAcesso: https://wilsonfreitas.github.io/rbcb/\n✅ Disponível no CRAN\n✅ Disponível no GitHub"
   },
   {
     "objectID": "slide-pacotes-br.html#conhecem-outros",
@@ -551,5 +551,19 @@
     "title": "Pacotes em R de dados brasileiros",
     "section": "Conhecem outros??",
     "text": "Conhecem outros??\n\nQueremos saber de outros pacotes de dados brasileiros!"
+  },
+  {
+    "objectID": "slide-pacotes-br.html#base-dos-dados",
+    "href": "slide-pacotes-br.html#base-dos-dados",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "Base dos dados",
+    "text": "Base dos dados\n\nO Base dos Dados é um projeto amplo.\nTem um pacote em R.\nAcesso: https://basedosdados.github.io/mais/"
+  },
+  {
+    "objectID": "slide-pacotes-br.html#agradecimentos-pela-sugestões-de-pacotes",
+    "href": "slide-pacotes-br.html#agradecimentos-pela-sugestões-de-pacotes",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "Agradecimentos pela sugestões de pacotes",
+    "text": "Agradecimentos pela sugestões de pacotes\n\nJulio Trecenti\nComunidade do grupo do telegram R Brasil: https://t.me/rbrasiloficial\n\n\n\n\nSlides feitos com Quarto e Quarto R-Ladies Theme."
   }
 ]
