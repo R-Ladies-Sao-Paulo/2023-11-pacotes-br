@@ -258,6 +258,24 @@ Fonte: <https://www.gov.br/governodigital/pt-br/dados-abertos>
 
 -   ✅ Disponível no GitHub
 
+
+## rbcb
+
+-  Pacote R para acessar dados do Banco Central do Brasil.
+
+-  Acesso: <https://wilsonfreitas.github.io/rbcb/>
+
+-  ✅ Disponível no CRAN
+
+-  ✅ Disponível no GitHub
+
+
+## Conhecem outros??
+
+-   Queremos saber de outros pacotes de dados brasileiros!
+
+# Extra
+
 ## Base dos dados
 
 -   O [Base dos Dados](https://basedosdados.org/) é um projeto amplo.
@@ -266,9 +284,6 @@ Fonte: <https://www.gov.br/governodigital/pt-br/dados-abertos>
 
 -   Acesso: <https://basedosdados.github.io/mais/>
 
-## Conhecem outros??
-
--   Queremos saber de outros pacotes de dados brasileiros!
 
 # Exemplos mais aprofundados: odbr e geobr!
 
@@ -294,9 +309,16 @@ knitr::write_bib(c(
   "BrazilMet",
   # "siconvr",
   "PNADcIBGE",
-  "ecodados"
+  "ecodados",
+  "rbcb"
 ), "packages.bib")
 ```
 
 ::: {#refs}
 :::
+
+## Agradecimentos pela sugestões de pacotes
+
+- Julio Trecenti
+
+- Comunidade do grupo do telegram R Brasil:  <https://t.me/rbrasiloficial>
