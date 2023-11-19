@@ -239,7 +239,9 @@ ensino_medio_sao_paulo |>
 Localização das escolas estaduais e escolas privadas no município de São Paulo, que oferecem Ensino Médio
 
 ```{r}
-#| echo: false
+#| echo: true
+#| code-fold: true
+#| code-summary: 'Ver código'
 library(ggspatial)
 ensino_medio_sao_paulo |>
   filter(government_level %in% c("Estadual", "Privada")) |>
@@ -272,7 +274,3 @@ ensino_medio_sao_paulo |>
     legend.title = element_text(size = rel(0.8))
   )
 ```
-
-## Materiais
-
--   

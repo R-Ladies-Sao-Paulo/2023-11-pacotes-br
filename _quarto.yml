@@ -31,6 +31,7 @@ website:
            - como-chegar.qmd
 
       - href: slides.qmd
+      - href: auxilios.qmd
       - href: perguntas-frequentes.qmd
 
       - href: apoio.qmd

@@ -128,6 +128,8 @@ Fonte: <https://www.gov.br/governodigital/pt-br/dados-abertos>
 
 # Vamos a alguns exemplos de pacotes!
 
+- Atenção: sempre leia a documentação do pacote para saber como usar os dados, qual é a fonte, ano de referência, possíveis cuidados necessários, se houve harmonização, etc.
+
 ## sidrar
 
 -   Pacote para obter dados do SIDRA (Sistema IBGE de Recuperação Automática).
@@ -230,6 +232,47 @@ Fonte: <https://www.gov.br/governodigital/pt-br/dados-abertos>
 
 -   ✅ Disponível no GitHub
 
+## siconvr
+
+-  Pacote R para acessar dados da Plataforma +Brasil (anteriormente SICONV).
+
+-  Acesso: <https://github.com/meirelesff/siconvr>
+
+- Atualmente está sem funcionar.
+
+
+## PNADcIBGE
+
+-  Pacote R para acessar dados da PNAD Contínua do IBGE.
+
+-  Acesso: <https://github.com/Gabriel-Assuncao/PNADcIBGE>
+
+-  ✅ Disponível no CRAN
+
+-   ✅ Disponível no GitHub
+
+
+## ecodados
+
+-  Pacote R para acessar dados úteis para ecologia. 
+
+- ATENÇÃO: Alguns dados são simulados! Leia a documentação da função para saber quais são.
+
+-  Acesso: <https://paternogbc.github.io/ecodados/index.html>
+
+
+-  ✅ Disponível no GitHub
+
+
+## Base dos dados
+
+- O [Base dos Dados](https://basedosdados.org/) é um projeto amplo.
+
+- Tem um [pacote em R](https://basedosdados.github.io/mais/api_reference_r/).
+
+- Acesso: <https://basedosdados.github.io/mais/>
+
+
 ## Conhecem outros??
 
 -   Queremos saber de outros pacotes de dados brasileiros!
@@ -254,7 +297,11 @@ knitr::write_bib(c(
   "microdatasus",
   "tjsp",
   "abjData",
-  "amphiBR"
+  "amphiBR",
+  "BrazilMet",
+  # "siconvr",
+  "PNADcIBGE",
+  "ecodados"
 ), "packages.bib")
 ```
 

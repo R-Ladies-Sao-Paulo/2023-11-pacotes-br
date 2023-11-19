@@ -165,14 +165,7 @@
     "href": "slide-geobr.html#section",
     "title": "Conhecendo o pacote geobr",
     "section": "",
-    "text": "Localização das escolas estaduais e escolas privadas no município de São Paulo, que oferecem Ensino Médio"
-  },
-  {
-    "objectID": "slide-geobr.html#materiais",
-    "href": "slide-geobr.html#materiais",
-    "title": "Conhecendo o pacote geobr",
-    "section": "Materiais",
-    "text": "Materiais\n\n\n\nSlides feitos com Quarto e Quarto R-Ladies Theme."
+    "text": "Localização das escolas estaduais e escolas privadas no município de São Paulo, que oferecem Ensino Médio\n\n\nVer código\nlibrary(ggspatial)\nensino_medio_sao_paulo |&gt;\n  filter(government_level %in% c(\"Estadual\", \"Privada\")) |&gt;\n  ggplot() +\n  geom_sf(data = muni_sp) +\n  geom_sf(aes(color = government_level, alpha = 0.1), show.legend = FALSE) +\n  facet_wrap(~ government_level) +\n  labs(x = \"Longitude\",\n       y = \"Latitude\") +\n  scale_fill_viridis_d(begin = 0.2, end = 0.9) +\n  theme(legend.spacing.x = unit(1.0, 'cm')) +\n  theme_bw() +\n  theme(\n    panel.grid.major = element_line(\n      color = gray(0.9),\n      linetype = \"dashed\",\n      size = 0.1\n    ),\n    panel.background = element_rect(fill = \"white\")\n  ) +\n  theme(\n    axis.text.y = element_text(\n      angle = 90,\n      hjust = 0.5,\n      size = 8\n    ),\n    axis.text.x = element_text(size = 8),\n    axis.title.y = element_text(size = rel(0.8)),\n    axis.title.x = element_text(size = rel(0.8)),\n    legend.title = element_text(size = rel(0.8))\n  )\n\n\n\n\n\n\n\n\n\n\n\n\nSlides feitos com Quarto e Quarto R-Ladies Theme."
   },
   {
     "objectID": "slide-rladies.html#o-que-é-a-r-ladies",
@@ -259,41 +252,6 @@
     "text": "Apoio financeiro\n\n\n\nR Consortium Logo"
   },
   {
-    "objectID": "slides.html",
-    "href": "slides.html",
-    "title": "Slides e materiais",
-    "section": "",
-    "text": "Slide\nMinistrante\n\n\n\n\nConhecendo as R-Ladies São Paulo\nLuana Antunes\n\n\nPacotes em R de dados brasileiros\nBeatriz Milz\n\n\nIntrodução ao pacote odbr\nHaydee Svab\n\n\nIntrodução ao pacote geobr\nBeatriz Milz"
-  },
-  {
-    "objectID": "perguntas-frequentes.html",
-    "href": "perguntas-frequentes.html",
-    "title": "Perguntas frequentes",
-    "section": "",
-    "text": "O evento será transmitido online?\n\nEste evento não será transmitido online, será apenas presencial.\nCaso queira ver a gravação dos eventos online passados, confira no nosso canal do Youtube.\nRecomendamos também seguir as atividades de outros capítulos da R-Ladies, como a R-Ladies Goiânia."
-  },
-  {
-    "objectID": "perguntas-frequentes.html#formato",
-    "href": "perguntas-frequentes.html#formato",
-    "title": "Perguntas frequentes",
-    "section": "",
-    "text": "O evento será transmitido online?\n\nEste evento não será transmitido online, será apenas presencial.\nCaso queira ver a gravação dos eventos online passados, confira no nosso canal do Youtube.\nRecomendamos também seguir as atividades de outros capítulos da R-Ladies, como a R-Ladies Goiânia."
-  },
-  {
-    "objectID": "mensagem-auxilios.html",
-    "href": "mensagem-auxilios.html",
-    "title": "Auxílio financeiro",
-    "section": "",
-    "text": "Para quem solicitou o auxílio transporte, será destinado o valor que foi solicitado no formulário.\nO valor de auxílio será disponibilizado preferencialmente ao chegar no evento (formato de reembolso). Ao checar no evento, procure a Beatriz Milz, que faz parte da equipe organizadora. Ela estará responsável por fazer as transferências dos valores (preferencialmente via PIX).\nCaso a sua participação seja inviabilizada nesta modalidade de reembolso ao chegar no evento, nos avise para que possamos alinhar outras formas de transferir o valor."
-  },
-  {
-    "objectID": "mensagem-auxilios.html#auxílio-transporte",
-    "href": "mensagem-auxilios.html#auxílio-transporte",
-    "title": "Auxílio financeiro",
-    "section": "",
-    "text": "Para quem solicitou o auxílio transporte, será destinado o valor que foi solicitado no formulário.\nO valor de auxílio será disponibilizado preferencialmente ao chegar no evento (formato de reembolso). Ao checar no evento, procure a Beatriz Milz, que faz parte da equipe organizadora. Ela estará responsável por fazer as transferências dos valores (preferencialmente via PIX).\nCaso a sua participação seja inviabilizada nesta modalidade de reembolso ao chegar no evento, nos avise para que possamos alinhar outras formas de transferir o valor."
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Pacotes em R de dados brasileiros",
@@ -369,6 +327,41 @@
     "title": "Pacotes em R de dados brasileiros",
     "section": "Apoio",
     "text": "Apoio\n\n\n\n\n\n\n\n\nR Consortium Logo"
+  },
+  {
+    "objectID": "perguntas-frequentes.html",
+    "href": "perguntas-frequentes.html",
+    "title": "Perguntas frequentes",
+    "section": "",
+    "text": "O evento será transmitido online?\n\nEste evento não será transmitido online, será apenas presencial.\nCaso queira ver a gravação dos eventos online passados, confira no nosso canal do Youtube.\nRecomendamos também seguir as atividades de outros capítulos da R-Ladies, como a R-Ladies Goiânia."
+  },
+  {
+    "objectID": "perguntas-frequentes.html#formato",
+    "href": "perguntas-frequentes.html#formato",
+    "title": "Perguntas frequentes",
+    "section": "",
+    "text": "O evento será transmitido online?\n\nEste evento não será transmitido online, será apenas presencial.\nCaso queira ver a gravação dos eventos online passados, confira no nosso canal do Youtube.\nRecomendamos também seguir as atividades de outros capítulos da R-Ladies, como a R-Ladies Goiânia."
+  },
+  {
+    "objectID": "slides.html",
+    "href": "slides.html",
+    "title": "Slides e materiais",
+    "section": "",
+    "text": "Slide\nMinistrante\n\n\n\n\nConhecendo as R-Ladies São Paulo\nLuana Antunes\n\n\nPacotes em R de dados brasileiros\nBeatriz Milz\n\n\nIntrodução ao pacote odbr\nHaydee Svab\n\n\nIntrodução ao pacote geobr\nBeatriz Milz"
+  },
+  {
+    "objectID": "auxilios.html",
+    "href": "auxilios.html",
+    "title": "Auxílio financeiro",
+    "section": "",
+    "text": "Para quem solicitou o auxílio transporte, será destinado o valor que foi solicitado no formulário.\nO valor de auxílio será disponibilizado preferencialmente ao chegar no evento (formato de reembolso). Ao checar no evento, procure a Beatriz Milz, que faz parte da equipe organizadora. Ela estará responsável por fazer as transferências dos valores (preferencialmente via PIX).\nCaso a sua participação seja inviabilizada nesta modalidade de reembolso ao chegar no evento, nos avise para que possamos alinhar outras formas de transferir o valor."
+  },
+  {
+    "objectID": "auxilios.html#auxílio-transporte",
+    "href": "auxilios.html#auxílio-transporte",
+    "title": "Auxílio financeiro",
+    "section": "",
+    "text": "Para quem solicitou o auxílio transporte, será destinado o valor que foi solicitado no formulário.\nO valor de auxílio será disponibilizado preferencialmente ao chegar no evento (formato de reembolso). Ao checar no evento, procure a Beatriz Milz, que faz parte da equipe organizadora. Ela estará responsável por fazer as transferências dos valores (preferencialmente via PIX).\nCaso a sua participação seja inviabilizada nesta modalidade de reembolso ao chegar no evento, nos avise para que possamos alinhar outras formas de transferir o valor."
   },
   {
     "objectID": "como-chegar.html",
@@ -530,6 +523,13 @@
     "title": "Pacotes em R de dados brasileiros",
     "section": "BrazilMet",
     "text": "BrazilMet\n\nPacote R para acessar dados meteorológicos das estações de monitoramento automáticas do INMET.\nAcesso: https://github.com/FilgueirasR/BrazilMet\n✅ Disponível no GitHub"
+  },
+  {
+    "objectID": "slide-pacotes-br.html#siconvr",
+    "href": "slide-pacotes-br.html#siconvr",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "siconvr",
+    "text": "siconvr\n\nPacote R para acessar dados da Plataforma +Brasil (anteriormente SICONV).\nAcesso: https://github.com/meirelesff/siconvr\nAtualmente está sem funcionar."
   },
   {
     "objectID": "slide-pacotes-br.html#conhecem-outros",
