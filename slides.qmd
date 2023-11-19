@@ -5,9 +5,9 @@ format: html
 editor: visual
 ---
 
-| Slide                                                                           | Ministrante   |
-|----------------------------------------------|-------------------------|
-| [Conhecendo as R-Ladies São Paulo](slide-rladies.qmd){target="_blank"}          | Luana Antunes |
-| [Pacotes em R de dados brasileiros](introducao-pacotes-br.qmd){target="_blank"} | Beatriz Milz  |
-| [Introdução ao pacote odbr](https://hsvab.github.io/latinr2023-championsprogram/){target="_blank"}                    | Haydee Svab   |
-| [Introdução ao pacote geobr](slide-geobr.qmd){target="_blank"}                  | Beatriz Milz  |
+| Slide                                                                                              | Ministrante   |
+|----------------------------------------------|--------------------------|
+| [Conhecendo as R-Ladies São Paulo](slide-rladies.qmd){target="_blank"}                             | Luana Antunes |
+| [Pacotes em R de dados brasileiros](slide-pacotes-br.qmd){target="_blank"}                    | Beatriz Milz  |
+| [Introdução ao pacote odbr](https://hsvab.github.io/latinr2023-championsprogram/){target="_blank"} | Haydee Svab   |
+| [Introdução ao pacote geobr](slide-geobr.qmd){target="_blank"}                                     | Beatriz Milz  |

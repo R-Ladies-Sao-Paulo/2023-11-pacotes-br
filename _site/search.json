@@ -161,11 +161,11 @@
     "text": "Visualizando as escolas que oferecem Ensino Médio\n\nensino_medio_sao_paulo |&gt;\n  ggplot() +\n  geom_sf(data = muni_sp) +\n  geom_sf(aes(color = government_level, alpha = 0.1), show.legend = FALSE) +\n  facet_wrap( ~ government_level)"
   },
   {
-    "objectID": "slide-geobr.html#deixando-mais-bonito",
-    "href": "slide-geobr.html#deixando-mais-bonito",
+    "objectID": "slide-geobr.html#section",
+    "href": "slide-geobr.html#section",
     "title": "Conhecendo o pacote geobr",
-    "section": "Deixando mais bonito",
-    "text": "Deixando mais bonito"
+    "section": "",
+    "text": "Localização das escolas estaduais e escolas privadas no município de São Paulo, que oferecem Ensino Médio"
   },
   {
     "objectID": "slide-geobr.html#materiais",
@@ -173,195 +173,6 @@
     "title": "Conhecendo o pacote geobr",
     "section": "Materiais",
     "text": "Materiais\n\n\n\nSlides feitos com Quarto e Quarto R-Ladies Theme."
-  },
-  {
-    "objectID": "como-chegar.html",
-    "href": "como-chegar.html",
-    "title": "Como chegar",
-    "section": "",
-    "text": "O evento acontecerá no Airbnb, em São Paulo - SP."
-  },
-  {
-    "objectID": "como-chegar.html#como-chegar",
-    "href": "como-chegar.html#como-chegar",
-    "title": "Como chegar",
-    "section": "Como chegar",
-    "text": "Como chegar\nEndereço: Rua Aspicuelta 422, cj 51. Alto de Pinheiros, São Paulo - SP"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Pacotes em R de dados brasileiros",
-    "section": "",
-    "text": "Essa oficina acontecerá presencialmente, em São Paulo, em 22/11/2023.\nInscrições através da plataforma Meetup."
-  },
-  {
-    "objectID": "index.html#boas-vindas",
-    "href": "index.html#boas-vindas",
-    "title": "Pacotes em R de dados brasileiros",
-    "section": "",
-    "text": "Essa oficina acontecerá presencialmente, em São Paulo, em 22/11/2023.\nInscrições através da plataforma Meetup."
-  },
-  {
-    "objectID": "index.html#café-colaborativo.",
-    "href": "index.html#café-colaborativo.",
-    "title": "Pacotes em R de dados brasileiros",
-    "section": "Café colaborativo.",
-    "text": "Café colaborativo.\nNeste evento, teremos um café colaborativo. As pessoas participantes podem levar comes e bebes para compartilhar com o grupo, mas não é obrigatório!"
-  },
-  {
-    "objectID": "index.html#sorteio",
-    "href": "index.html#sorteio",
-    "title": "Pacotes em R de dados brasileiros",
-    "section": "Sorteio",
-    "text": "Sorteio\nNeste evento, teremos o sorteio de:\n\n1 camiseta da R-Ladies São Paulo"
-  },
-  {
-    "objectID": "index.html#espaço-gugudadados",
-    "href": "index.html#espaço-gugudadados",
-    "title": "Pacotes em R de dados brasileiros",
-    "section": "Espaço Gugudadados",
-    "text": "Espaço Gugudadados\nO Espaço Gugudadados é um espaço feito para facilitar a participação de mães e pessoas cuidadoras. Este espaço fica próximo à sala principal da atividade, e contará com brinquedos e pessoas adultas que acompanharão as crianças durante o evento principal. Também teremos a presença de uma professora remunerada para acompanhar as crianças.\nCaso queira saber mais sobre como foi em eventos anteriores, leia aqui."
-  },
-  {
-    "objectID": "index.html#auxílio-transporte",
-    "href": "index.html#auxílio-transporte",
-    "title": "Pacotes em R de dados brasileiros",
-    "section": "Auxílio transporte",
-    "text": "Auxílio transporte\nNeste evento, teremos auxílio transporte para algumas pessoas participantes. Caso você tenha solicitado o auxílio, entre em contato com a equipe da organização durante o evento para que o valor seja transferido."
-  },
-  {
-    "objectID": "index.html#protocolos-referentes-à-covid-19",
-    "href": "index.html#protocolos-referentes-à-covid-19",
-    "title": "Pacotes em R de dados brasileiros",
-    "section": "Protocolos referentes à COVID-19",
-    "text": "Protocolos referentes à COVID-19\nRecomendamos que pessoas adultas que compareçam ao eventos tenham tomado pelo menos 2 doses da vacina contra Covid-19."
-  },
-  {
-    "objectID": "index.html#código-de-conduta",
-    "href": "index.html#código-de-conduta",
-    "title": "Pacotes em R de dados brasileiros",
-    "section": "Código de conduta",
-    "text": "Código de conduta\nEste código de conduta aplica-se a todos os espaços R-Ladies, incluindo: meetups, Twitter, Slack, listas de discussão, tanto online como offline: Clique aqui para acessar o código de conduta."
-  },
-  {
-    "objectID": "index.html#mensagens",
-    "href": "index.html#mensagens",
-    "title": "Pacotes em R de dados brasileiros",
-    "section": "Mensagens",
-    "text": "Mensagens\n\nPreencham a lista de presença! O link será disponibilizado durante a atividade. Essa lista será usada para gerar os certificados e para realizar os sorteios :)\nTemos um grupo no telegram! Caso queiram entrar, peça para alguma das pessoas organizadoras."
-  },
-  {
-    "objectID": "index.html#siga-a-r-ladies-são-paulo",
-    "href": "index.html#siga-a-r-ladies-são-paulo",
-    "title": "Pacotes em R de dados brasileiros",
-    "section": "Siga a R-Ladies São Paulo!",
-    "text": "Siga a R-Ladies São Paulo!\n\nBlog\nLinkedin\nMeetup\nYoutube\nTwitter\nInstagram"
-  },
-  {
-    "objectID": "index.html#apoio",
-    "href": "index.html#apoio",
-    "title": "Pacotes em R de dados brasileiros",
-    "section": "Apoio",
-    "text": "Apoio\n\n\n\n\n\n\n\n\nR Consortium Logo"
-  },
-  {
-    "objectID": "introducao-pacotes-br.html#o-que-abordaremos-hoje",
-    "href": "introducao-pacotes-br.html#o-que-abordaremos-hoje",
-    "title": "Pacotes em R de dados brasileiros",
-    "section": "O que abordaremos hoje?",
-    "text": "O que abordaremos hoje?\n\nObjetivo: apresentar alguns pacotes em R de dados brasileiros.\nAprofundaremos em dois pacotes: odbr e geobr."
-  },
-  {
-    "objectID": "introducao-pacotes-br.html#o-que-são-pacotes-em-r",
-    "href": "introducao-pacotes-br.html#o-que-são-pacotes-em-r",
-    "title": "Pacotes em R de dados brasileiros",
-    "section": "O que são pacotes em R?",
-    "text": "O que são pacotes em R?\n\nPacotes são conjuntos de funções e dados que estendem a funcionalidade base do R.\nPodem ser instalados diretamente do CRAN (Comprehensive R Archive Network) ou de repositórios do GitHub.\nPodem ser desenvolvidos por qualquer pessoa.\nPodem ser usados para diferentes finalidades."
-  },
-  {
-    "objectID": "introducao-pacotes-br.html#o-que-queremos-dizer-com-dados-brasileiros",
-    "href": "introducao-pacotes-br.html#o-que-queremos-dizer-com-dados-brasileiros",
-    "title": "Pacotes em R de dados brasileiros",
-    "section": "O que queremos dizer com “dados brasileiros”?",
-    "text": "O que queremos dizer com “dados brasileiros”?\n\nDados que se referem ao Brasil, à população brasileira, aos seus estados, municípios, etc.\nPodem ser dados de diferentes fontes: IBGE, INEP, Datasus, MMA, CEMADEN, FUNAI, etc.\nGeralmente são dados produzidos por algum órgão público, ou com atuação relacionada à alguma atividade de interesse público.\nPodem ser dados em diferentes escalas: dados nacionais, estaduais, municipais, etc."
-  },
-  {
-    "objectID": "introducao-pacotes-br.html#sidrar",
-    "href": "introducao-pacotes-br.html#sidrar",
-    "title": "Pacotes em R de dados brasileiros",
-    "section": "sidrar",
-    "text": "sidrar\n\nPacote para obter dados do SIDRA (Sistema IBGE de Recuperação Automática).\nAcesso: https://github.com/rpradosiqueira/sidrar\n✅ Disponível no CRAN\n✅ Disponível no GitHub"
-  },
-  {
-    "objectID": "introducao-pacotes-br.html#censobr",
-    "href": "introducao-pacotes-br.html#censobr",
-    "title": "Pacotes em R de dados brasileiros",
-    "section": "censobr",
-    "text": "censobr\n\nPacote para obter de dados do Censo Demográfico Brasileiro.\nAcesso: https://ipeagit.github.io/censobr/\n✅ Disponível no CRAN\n✅ Disponível no GitHub"
-  },
-  {
-    "objectID": "introducao-pacotes-br.html#qualr",
-    "href": "introducao-pacotes-br.html#qualr",
-    "title": "Pacotes em R de dados brasileiros",
-    "section": "qualR",
-    "text": "qualR\n\nPacote para obter de dados sobre a poluição do ar em São Paulo e no Rio de Janeiro.\nAcesso: https://docs.ropensci.org/qualR/\n❌ Disponível no CRAN\n✅ Disponível no GitHub\n✅ Revisado por pares na ROpenSci."
-  },
-  {
-    "objectID": "introducao-pacotes-br.html#mananciais",
-    "href": "introducao-pacotes-br.html#mananciais",
-    "title": "Pacotes em R de dados brasileiros",
-    "section": "Mananciais",
-    "text": "Mananciais\n\nPacote para obter dados sobre os mananciais de abastecimento da Região Metropolitana de São Paulo.\nAcesso: https://beatrizmilz.github.io/mananciais/\n❌ Disponível no CRAN\n✅ Disponível no GitHub"
-  },
-  {
-    "objectID": "introducao-pacotes-br.html#conhecem-outros",
-    "href": "introducao-pacotes-br.html#conhecem-outros",
-    "title": "Pacotes em R de dados brasileiros",
-    "section": "Conhecem outros??",
-    "text": "Conhecem outros??\n\n…\n\n\n\n\nSlides feitos com Quarto e Quarto R-Ladies Theme."
-  },
-  {
-    "objectID": "perguntas-frequentes.html",
-    "href": "perguntas-frequentes.html",
-    "title": "Perguntas frequentes",
-    "section": "",
-    "text": "O evento será transmitido online?\n\nEste evento não será transmitido online, será apenas presencial.\nCaso queira ver a gravação dos eventos online passados, confira no nosso canal do Youtube.\nRecomendamos também seguir as atividades de outros capítulos da R-Ladies, como a R-Ladies Goiânia."
-  },
-  {
-    "objectID": "perguntas-frequentes.html#formato",
-    "href": "perguntas-frequentes.html#formato",
-    "title": "Perguntas frequentes",
-    "section": "",
-    "text": "O evento será transmitido online?\n\nEste evento não será transmitido online, será apenas presencial.\nCaso queira ver a gravação dos eventos online passados, confira no nosso canal do Youtube.\nRecomendamos também seguir as atividades de outros capítulos da R-Ladies, como a R-Ladies Goiânia."
-  },
-  {
-    "objectID": "mensagem-auxilios.html",
-    "href": "mensagem-auxilios.html",
-    "title": "Auxílio financeiro",
-    "section": "",
-    "text": "Para quem solicitou o auxílio transporte, será destinado o valor que foi solicitado no formulário.\nO valor de auxílio será disponibilizado preferencialmente ao chegar no evento (formato de reembolso). Ao checar no evento, procure a Beatriz Milz, que faz parte da equipe organizadora. Ela estará responsável por fazer as transferências dos valores (preferencialmente via PIX).\nCaso a sua participação seja inviabilizada nesta modalidade de reembolso ao chegar no evento, nos avise para que possamos alinhar outras formas de transferir o valor."
-  },
-  {
-    "objectID": "mensagem-auxilios.html#auxílio-transporte",
-    "href": "mensagem-auxilios.html#auxílio-transporte",
-    "title": "Auxílio financeiro",
-    "section": "",
-    "text": "Para quem solicitou o auxílio transporte, será destinado o valor que foi solicitado no formulário.\nO valor de auxílio será disponibilizado preferencialmente ao chegar no evento (formato de reembolso). Ao checar no evento, procure a Beatriz Milz, que faz parte da equipe organizadora. Ela estará responsável por fazer as transferências dos valores (preferencialmente via PIX).\nCaso a sua participação seja inviabilizada nesta modalidade de reembolso ao chegar no evento, nos avise para que possamos alinhar outras formas de transferir o valor."
-  },
-  {
-    "objectID": "slides.html",
-    "href": "slides.html",
-    "title": "Slides e materiais",
-    "section": "",
-    "text": "Slide\nMinistrante\n\n\n\n\nConhecendo as R-Ladies São Paulo\nLuana Antunes\n\n\nPacotes em R de dados brasileiros\nBeatriz Milz\n\n\nIntrodução ao pacote odbr\nHaydee Svab\n\n\nIntrodução ao pacote geobr\nBeatriz Milz"
-  },
-  {
-    "objectID": "apoio.html#apoio-financeiro",
-    "href": "apoio.html#apoio-financeiro",
-    "title": "Apoio",
-    "section": "Apoio financeiro",
-    "text": "Apoio financeiro\n\n\n\nR Consortium Logo"
   },
   {
     "objectID": "slide-rladies.html#o-que-é-a-r-ladies",
@@ -441,10 +252,290 @@
     "text": "Saiba mais sobre a R-Ladies\n\nR-Ladies Global: Website,  Twitter\nR-Ladies São Paulo:\n\nBlog: https://rladies-sp.org/\n Linkedin\n\n Twitter\n Instagram\n Facebook\n Meetup\n GitHub\n Youtube\n\n\n\n\n\n\n\n\nSlides feitos com Quarto e Quarto R-Ladies Theme."
   },
   {
-    "objectID": "slide-geobr.html#section",
-    "href": "slide-geobr.html#section",
-    "title": "Conhecendo o pacote geobr",
+    "objectID": "apoio.html#apoio-financeiro",
+    "href": "apoio.html#apoio-financeiro",
+    "title": "Apoio",
+    "section": "Apoio financeiro",
+    "text": "Apoio financeiro\n\n\n\nR Consortium Logo"
+  },
+  {
+    "objectID": "slides.html",
+    "href": "slides.html",
+    "title": "Slides e materiais",
     "section": "",
-    "text": "Localização das escolas estaduais e escolas privadas no município de São Paulo, que oferecem Ensino Médio"
+    "text": "Slide\nMinistrante\n\n\n\n\nConhecendo as R-Ladies São Paulo\nLuana Antunes\n\n\nPacotes em R de dados brasileiros\nBeatriz Milz\n\n\nIntrodução ao pacote odbr\nHaydee Svab\n\n\nIntrodução ao pacote geobr\nBeatriz Milz"
+  },
+  {
+    "objectID": "perguntas-frequentes.html",
+    "href": "perguntas-frequentes.html",
+    "title": "Perguntas frequentes",
+    "section": "",
+    "text": "O evento será transmitido online?\n\nEste evento não será transmitido online, será apenas presencial.\nCaso queira ver a gravação dos eventos online passados, confira no nosso canal do Youtube.\nRecomendamos também seguir as atividades de outros capítulos da R-Ladies, como a R-Ladies Goiânia."
+  },
+  {
+    "objectID": "perguntas-frequentes.html#formato",
+    "href": "perguntas-frequentes.html#formato",
+    "title": "Perguntas frequentes",
+    "section": "",
+    "text": "O evento será transmitido online?\n\nEste evento não será transmitido online, será apenas presencial.\nCaso queira ver a gravação dos eventos online passados, confira no nosso canal do Youtube.\nRecomendamos também seguir as atividades de outros capítulos da R-Ladies, como a R-Ladies Goiânia."
+  },
+  {
+    "objectID": "mensagem-auxilios.html",
+    "href": "mensagem-auxilios.html",
+    "title": "Auxílio financeiro",
+    "section": "",
+    "text": "Para quem solicitou o auxílio transporte, será destinado o valor que foi solicitado no formulário.\nO valor de auxílio será disponibilizado preferencialmente ao chegar no evento (formato de reembolso). Ao checar no evento, procure a Beatriz Milz, que faz parte da equipe organizadora. Ela estará responsável por fazer as transferências dos valores (preferencialmente via PIX).\nCaso a sua participação seja inviabilizada nesta modalidade de reembolso ao chegar no evento, nos avise para que possamos alinhar outras formas de transferir o valor."
+  },
+  {
+    "objectID": "mensagem-auxilios.html#auxílio-transporte",
+    "href": "mensagem-auxilios.html#auxílio-transporte",
+    "title": "Auxílio financeiro",
+    "section": "",
+    "text": "Para quem solicitou o auxílio transporte, será destinado o valor que foi solicitado no formulário.\nO valor de auxílio será disponibilizado preferencialmente ao chegar no evento (formato de reembolso). Ao checar no evento, procure a Beatriz Milz, que faz parte da equipe organizadora. Ela estará responsável por fazer as transferências dos valores (preferencialmente via PIX).\nCaso a sua participação seja inviabilizada nesta modalidade de reembolso ao chegar no evento, nos avise para que possamos alinhar outras formas de transferir o valor."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "",
+    "text": "Essa oficina acontecerá presencialmente, em São Paulo, em 22/11/2023.\nInscrições através da plataforma Meetup."
+  },
+  {
+    "objectID": "index.html#boas-vindas",
+    "href": "index.html#boas-vindas",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "",
+    "text": "Essa oficina acontecerá presencialmente, em São Paulo, em 22/11/2023.\nInscrições através da plataforma Meetup."
+  },
+  {
+    "objectID": "index.html#café-colaborativo.",
+    "href": "index.html#café-colaborativo.",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "Café colaborativo.",
+    "text": "Café colaborativo.\nNeste evento, teremos um café colaborativo. As pessoas participantes podem levar comes e bebes para compartilhar com o grupo, mas não é obrigatório!"
+  },
+  {
+    "objectID": "index.html#sorteio",
+    "href": "index.html#sorteio",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "Sorteio",
+    "text": "Sorteio\nNeste evento, teremos o sorteio de:\n\n1 camiseta da R-Ladies São Paulo"
+  },
+  {
+    "objectID": "index.html#espaço-gugudadados",
+    "href": "index.html#espaço-gugudadados",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "Espaço Gugudadados",
+    "text": "Espaço Gugudadados\nO Espaço Gugudadados é um espaço feito para facilitar a participação de mães e pessoas cuidadoras. Este espaço fica próximo à sala principal da atividade, e contará com brinquedos e pessoas adultas que acompanharão as crianças durante o evento principal. Também teremos a presença de uma professora remunerada para acompanhar as crianças.\nCaso queira saber mais sobre como foi em eventos anteriores, leia aqui."
+  },
+  {
+    "objectID": "index.html#auxílio-transporte",
+    "href": "index.html#auxílio-transporte",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "Auxílio transporte",
+    "text": "Auxílio transporte\nNeste evento, teremos auxílio transporte para algumas pessoas participantes. Caso você tenha solicitado o auxílio, entre em contato com a equipe da organização durante o evento para que o valor seja transferido."
+  },
+  {
+    "objectID": "index.html#protocolos-referentes-à-covid-19",
+    "href": "index.html#protocolos-referentes-à-covid-19",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "Protocolos referentes à COVID-19",
+    "text": "Protocolos referentes à COVID-19\nRecomendamos que pessoas adultas que compareçam ao eventos tenham tomado pelo menos 2 doses da vacina contra Covid-19."
+  },
+  {
+    "objectID": "index.html#código-de-conduta",
+    "href": "index.html#código-de-conduta",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "Código de conduta",
+    "text": "Código de conduta\nEste código de conduta aplica-se a todos os espaços R-Ladies, incluindo: meetups, Twitter, Slack, listas de discussão, tanto online como offline: Clique aqui para acessar o código de conduta."
+  },
+  {
+    "objectID": "index.html#mensagens",
+    "href": "index.html#mensagens",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "Mensagens",
+    "text": "Mensagens\n\nPreencham a lista de presença! O link será disponibilizado durante a atividade. Essa lista será usada para gerar os certificados e para realizar os sorteios :)\nTemos um grupo no telegram! Caso queiram entrar, peça para alguma das pessoas organizadoras."
+  },
+  {
+    "objectID": "index.html#siga-a-r-ladies-são-paulo",
+    "href": "index.html#siga-a-r-ladies-são-paulo",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "Siga a R-Ladies São Paulo!",
+    "text": "Siga a R-Ladies São Paulo!\n\nBlog\nLinkedin\nMeetup\nYoutube\nTwitter\nInstagram"
+  },
+  {
+    "objectID": "index.html#apoio",
+    "href": "index.html#apoio",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "Apoio",
+    "text": "Apoio\n\n\n\n\n\n\n\n\nR Consortium Logo"
+  },
+  {
+    "objectID": "como-chegar.html",
+    "href": "como-chegar.html",
+    "title": "Como chegar",
+    "section": "",
+    "text": "O evento acontecerá no Airbnb, em São Paulo - SP."
+  },
+  {
+    "objectID": "como-chegar.html#como-chegar",
+    "href": "como-chegar.html#como-chegar",
+    "title": "Como chegar",
+    "section": "Como chegar",
+    "text": "Como chegar\nEndereço: Rua Aspicuelta 422, cj 51. Alto de Pinheiros, São Paulo - SP"
+  },
+  {
+    "objectID": "slide-pacotes-br.html#o-que-abordaremos-hoje",
+    "href": "slide-pacotes-br.html#o-que-abordaremos-hoje",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "O que abordaremos hoje?",
+    "text": "O que abordaremos hoje?\n\nO que são pacotes?\nO que entendemos por “dados brasileiros”?\nExemplos de alguns pacotes de dados brasileiros.\nAprofundaremos em dois pacotes: odbr e geobr."
+  },
+  {
+    "objectID": "slide-pacotes-br.html#o-que-são-pacotes-em-r",
+    "href": "slide-pacotes-br.html#o-que-são-pacotes-em-r",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "O que são pacotes em R?",
+    "text": "O que são pacotes em R?\n\nPacotes são conjuntos de funções e dados que estendem a funcionalidade base do R.\nPodem ser desenvolvidos por qualquer pessoa (ou grupo de pessoas).\nPodem ser usados para diferentes finalidades."
+  },
+  {
+    "objectID": "slide-pacotes-br.html#como-usar-um-pacote",
+    "href": "slide-pacotes-br.html#como-usar-um-pacote",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "Como usar um pacote?",
+    "text": "Como usar um pacote?\n\nInstalar o pacote:\n\nPrecisamos instalar o pacote apenas uma vez.\nÉ necessário colocar o nome entre aspas.\n\n\n\ninstall.packages(\"nome_do_pacote\")\n\n\nCarregar o pacote:\n\nPrecisamos carregar o pacote para usá-lo.\nNão é necessário colocar o nome entre aspas.\n\n\n\nlibrary(nome_do_pacote)"
+  },
+  {
+    "objectID": "slide-pacotes-br.html#repositórios-de-pacotes",
+    "href": "slide-pacotes-br.html#repositórios-de-pacotes",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "Repositórios de pacotes",
+    "text": "Repositórios de pacotes\n\nCRAN\nGitHub\nR Universe da R OpenSci\nOutros, como o Bioconductor"
+  },
+  {
+    "objectID": "slide-pacotes-br.html#pacotes-no-github",
+    "href": "slide-pacotes-br.html#pacotes-no-github",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "Pacotes no GitHub",
+    "text": "Pacotes no GitHub"
+  },
+  {
+    "objectID": "slide-pacotes-br.html#instalar-um-pacote-via-github",
+    "href": "slide-pacotes-br.html#instalar-um-pacote-via-github",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "Instalar um pacote via GitHub",
+    "text": "Instalar um pacote via GitHub\n\n# Instalar via GitHub\n\n# Instalar o pacote Remotes\ninstall.packages(\"remotes\")\n\n# Instalar o pacote via GitHub\nremotes::install_github(\"cienciadedatos/dados\")"
+  },
+  {
+    "objectID": "slide-pacotes-br.html#pacotes-no-r-universe",
+    "href": "slide-pacotes-br.html#pacotes-no-r-universe",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "Pacotes no R Universe",
+    "text": "Pacotes no R Universe\n\nPara saber mais: https://jeroen.github.io/runiverse2021/"
+  },
+  {
+    "objectID": "slide-pacotes-br.html#o-que-queremos-dizer-com-dados-brasileiros",
+    "href": "slide-pacotes-br.html#o-que-queremos-dizer-com-dados-brasileiros",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "O que queremos dizer com “dados brasileiros”?",
+    "text": "O que queremos dizer com “dados brasileiros”?\n\nDados que se referem ao Brasil, à população brasileira, aos seus estados, municípios, dados judiciários, etc.\nPodem ser dados de diferentes fontes: IBGE, INEP, Datasus, MMA, CEMADEN, FUNAI, CNJ, etc.\nGeralmente são dados produzidos por algum órgão público, autarquias (ex. Comissão de Valores Mobiliários), entidades de economia mista (ex. SABESP), ou com atuação relacionada à alguma atividade de interesse público.\nPodem ser dados em diferentes escalas: dados nacionais, estaduais, municipais, bacias hidrográficas, etc."
+  },
+  {
+    "objectID": "slide-pacotes-br.html#pacote-de-dados-dados-abertos",
+    "href": "slide-pacotes-br.html#pacote-de-dados-dados-abertos",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "Pacote de dados != dados abertos",
+    "text": "Pacote de dados != dados abertos\n\nPacotes de dados não necessariamente significa que os dados desse pacote são considerados ‘dados abertos’.\n\nAlguns pacotes disponibilizam dados abertos;\nAlguns pacotes disponibilizam dados “libertos” (dados que não são abertos, mas que foram liberados para uso);\n\nSobre dados “libertos”, ver essa apresentação do Turicas."
+  },
+  {
+    "objectID": "slide-pacotes-br.html#o-que-são-dados-abertos",
+    "href": "slide-pacotes-br.html#o-que-são-dados-abertos",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "O que são dados abertos?",
+    "text": "O que são dados abertos?\nSegundo a definição da Open Knowledge Foundation, os dados são considerados abertos quando:\n\nQualquer pessoa pode acessar, usar, modificar e compartilhar livremente para qualquer finalidade (sujeito a, no máximo, a requisitos que preservem a proveniência e a sua abertura).\n\n\nRecomendo ver a apresentação que fizemos no Open Data Day.\n\n\n\nFonte: https://www.gov.br/governodigital/pt-br/dados-abertos"
+  },
+  {
+    "objectID": "slide-pacotes-br.html#sidrar",
+    "href": "slide-pacotes-br.html#sidrar",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "sidrar",
+    "text": "sidrar\n\nPacote para obter dados do SIDRA (Sistema IBGE de Recuperação Automática).\nAcesso: https://github.com/rpradosiqueira/sidrar\n✅ Disponível no CRAN\n✅ Disponível no GitHub"
+  },
+  {
+    "objectID": "slide-pacotes-br.html#censobr",
+    "href": "slide-pacotes-br.html#censobr",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "censobr",
+    "text": "censobr\n\nPacote para obter de dados do Censo Demográfico Brasileiro.\nAcesso: https://ipeagit.github.io/censobr/\n✅ Disponível no CRAN\n✅ Disponível no GitHub"
+  },
+  {
+    "objectID": "slide-pacotes-br.html#qualr",
+    "href": "slide-pacotes-br.html#qualr",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "qualR",
+    "text": "qualR\n\nPacote para obter de dados sobre a poluição do ar em São Paulo e no Rio de Janeiro.\nRevisado por pares via ROpenSci.\nAcesso: https://docs.ropensci.org/qualR/\n✅ Disponível no GitHub\n✅ Disponível no R Universe"
+  },
+  {
+    "objectID": "slide-pacotes-br.html#mananciais",
+    "href": "slide-pacotes-br.html#mananciais",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "mananciais",
+    "text": "mananciais\n\nPacote para obter dados sobre os mananciais de abastecimento da Região Metropolitana de São Paulo.\nAcesso: https://beatrizmilz.github.io/mananciais/\n✅ Disponível no GitHub"
+  },
+  {
+    "objectID": "slide-pacotes-br.html#reservatoriosbr",
+    "href": "slide-pacotes-br.html#reservatoriosbr",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "reservatoriosbr",
+    "text": "reservatoriosbr\n\nPacote para obter dados sobre os principais reservatórios brasileiros a partir da plataforma SAR-ANA e da ONS.\nAcesso: https://brunomioto.github.io/reservatoriosBR/\n✅ Disponível no GitHub"
+  },
+  {
+    "objectID": "slide-pacotes-br.html#flightsbr",
+    "href": "slide-pacotes-br.html#flightsbr",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "flightsbr",
+    "text": "flightsbr\n\nPacote para obter dados de aeroportos e vôos no Brasil.\nAcesso: https://ipeagit.github.io/flightsbr/\n✅ Disponível no CRAN\n✅ Disponível no GitHub"
+  },
+  {
+    "objectID": "slide-pacotes-br.html#microdatasus",
+    "href": "slide-pacotes-br.html#microdatasus",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "microdatasus",
+    "text": "microdatasus\n\nPacote para obter microdados do Datasus.\nExiste um artigo científico sobre ele: https://www.scielo.br/j/csp/a/gdJXqcrW5PPDHX8rwPDYL7F/\nAcesso: https://github.com/rfsaldanha/microdatasus\n✅ Disponível no GitHub"
+  },
+  {
+    "objectID": "slide-pacotes-br.html#tjsp",
+    "href": "slide-pacotes-br.html#tjsp",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "tjsp",
+    "text": "tjsp\n\nPacote para obter dados do Tribunal de Justiça de São Paulo.\nAcesso: https://tjsp.consudata.com.br/\n✅ Disponível no GitHub"
+  },
+  {
+    "objectID": "slide-pacotes-br.html#abjdata",
+    "href": "slide-pacotes-br.html#abjdata",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "abjData",
+    "text": "abjData\n\nPacote de dados úteis para a ABJ.\nAcesso: https://abjur.github.io/abjData/\n✅ Disponível no GitHub"
+  },
+  {
+    "objectID": "slide-pacotes-br.html#amphibr",
+    "href": "slide-pacotes-br.html#amphibr",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "amphiBR",
+    "text": "amphiBR\n\nPacote R com dataset da publicação oficial da Lista de Anfíbios do Brasil publicada pela Sociedade Brasileira de Herpetologia.\nAcesso: https://paulobarros.github.io/amphiBR/index.html\n✅ Disponível no GitHub"
+  },
+  {
+    "objectID": "slide-pacotes-br.html#brazilmet",
+    "href": "slide-pacotes-br.html#brazilmet",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "BrazilMet",
+    "text": "BrazilMet\n\nPacote R para acessar dados meteorológicos das estações de monitoramento automáticas do INMET.\nAcesso: https://github.com/FilgueirasR/BrazilMet\n✅ Disponível no GitHub"
+  },
+  {
+    "objectID": "slide-pacotes-br.html#conhecem-outros",
+    "href": "slide-pacotes-br.html#conhecem-outros",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "Conhecem outros??",
+    "text": "Conhecem outros??\n\nQueremos saber de outros pacotes de dados brasileiros!"
   }
 ]

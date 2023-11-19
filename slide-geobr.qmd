@@ -99,8 +99,6 @@ class(brasil_ufs)
 glimpse(brasil_ufs)
 ```
 
-
-
 ## Visualizando os estados brasileiros
 
 ```{r}
@@ -119,7 +117,6 @@ estado_sp |>
   ggplot() +
   geom_sf()
 ```
-
 
 # E os municípios?
 
@@ -140,7 +137,6 @@ glimpse(brasil_municipios)
 
 [![](img/codigo-muni.png){fig-align="center" width="80%"}](https://www.ibge.gov.br/explica/codigos-dos-municipios.php)
 
-
 ## Filtrando o município de São Paulo
 
 ```{r}
@@ -156,15 +152,11 @@ muni_sp |>
   geom_sf()
 ```
 
-
 ## E escolas?
-
 
 ```{r}
 escolas_brasil <- read_schools(showProgress = FALSE)
 ```
-
-
 
 ## Explorando o objeto
 
@@ -180,7 +172,6 @@ escolas_saopaulo <- escolas_brasil |>
          name_muni == "São Paulo") 
 ```
 
-
 ## Escolas por `government_level`
 
 ```{r}
@@ -194,7 +185,6 @@ escolas_saopaulo |>
 ensino_medio_sao_paulo <- escolas_saopaulo |> 
   filter(str_detect(education_level, "Ensino Médio"))
 ```
-
 
 # Vamos visualizar?
 
@@ -215,9 +205,7 @@ escolas_saopaulo |>
   geom_sf()
 ```
 
-  
 ## Visualizando as escolas por `government_level`
-
 
 ```{r}
 escolas_saopaulo |> 
@@ -236,7 +224,6 @@ escolas_saopaulo |>
   facet_wrap(~government_level)
 ```
 
-
 ## Visualizando as escolas que oferecem Ensino Médio
 
 ```{r}
@@ -247,13 +234,9 @@ ensino_medio_sao_paulo |>
   facet_wrap( ~ government_level)
 ```
 
-
-
-
 ## 
 
 Localização das escolas estaduais e escolas privadas no município de São Paulo, que oferecem Ensino Médio
-
 
 ```{r}
 #| echo: false
@@ -291,3 +274,5 @@ ensino_medio_sao_paulo |>
 ```
 
 ## Materiais
+
+-   

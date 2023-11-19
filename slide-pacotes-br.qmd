@@ -1,0 +1,264 @@
+---
+title: "Pacotes em R de dados brasileiros"
+author: "R-Ladies São Paulo"
+date: "2023-11-22"
+format: 
+  rladies-revealjs:
+    footer: "Slides feitos com [Quarto](https://quarto.org/docs/presentations/revealjs/index.html) e [Quarto R-Ladies Theme](https://github.com/beatrizmilz/quarto-rladies-theme#quarto-r-ladies-theme)."
+incremental: false
+knitr:
+  opts_chunk:
+    echo: true
+    message: false
+    warning: false
+    error: false
+    cache: true
+    fig-align: center
+    code-overflow: wrap
+nocite: |
+  @*    
+bibliography: packages.bib
+---
+
+## O que abordaremos hoje?
+
+-   O que são pacotes?
+
+-   O que entendemos por "dados brasileiros"?
+
+-   Exemplos de alguns pacotes de dados brasileiros.
+
+-   Aprofundaremos em dois pacotes: `odbr` e `geobr`.
+
+# Pacotes
+
+## O que são pacotes em R?
+
+-   Pacotes são conjuntos de funções e dados que estendem a funcionalidade base do R.
+
+-   Podem ser desenvolvidos por **qualquer pessoa** (ou grupo de pessoas).
+
+-   Podem ser usados para **diferentes finalidades**.
+
+## Como usar um pacote?
+
+-   Instalar o pacote:
+    -   Precisamos instalar o pacote **apenas uma vez**.
+    -   É necessário colocar o nome entre aspas.
+
+```{r}
+#| eval: false
+install.packages("nome_do_pacote")
+```
+
+-   Carregar o pacote:
+    -   Precisamos carregar o pacote para usá-lo.
+    -   Não é necessário colocar o nome entre aspas.
+
+```{r}
+#| eval: false
+library(nome_do_pacote)
+```
+
+## Repositórios de pacotes
+
+-   [CRAN](https://cran.r-project.org/)
+
+-   [GitHub](https://github.com/)
+
+-   [R Universe](https://r-universe.dev/search/) da [R OpenSci](https://ropensci.org/)
+
+-   Outros, como o [Bioconductor](https://www.bioconductor.org/install/)
+
+## Pacotes no GitHub
+
+![](images/repogithub.png)
+
+## Instalar um pacote via GitHub
+
+```{r}
+#| eval: false
+# Instalar via GitHub
+
+# Instalar o pacote Remotes
+install.packages("remotes")
+
+# Instalar o pacote via GitHub
+remotes::install_github("cienciadedatos/dados")
+```
+
+## Pacotes no R Universe
+
+[![](images/runivrse.png)](https://r-universe.dev/organizations/)
+
+Para saber mais: <https://jeroen.github.io/runiverse2021/>
+
+# Pacotes de dados brasileiros
+
+## O que queremos dizer com "dados brasileiros"?
+
+-   Dados que se referem ao Brasil, à população brasileira, aos seus estados, municípios, dados judiciários, etc.
+
+-   Podem ser dados de diferentes fontes: IBGE, INEP, Datasus, MMA, CEMADEN, FUNAI, CNJ, etc.
+
+-   Geralmente são dados produzidos por algum órgão público, autarquias (ex. Comissão de Valores Mobiliários), entidades de economia mista (ex. SABESP), ou com atuação relacionada à alguma atividade de interesse público.
+
+-   Podem ser dados em diferentes escalas: dados nacionais, estaduais, municipais, bacias hidrográficas, etc.
+
+## Pacote de dados `!=` dados abertos
+
+-   Pacotes de dados não necessariamente significa que os dados desse pacote são considerados 'dados abertos'.
+    -   Alguns pacotes disponibilizam dados abertos;
+    -   Alguns pacotes disponibilizam dados "libertos" (dados que não são abertos, mas que foram liberados para uso);
+-   Sobre dados "libertos", ver [essa apresentação do Turicas](http://turicas.info/slides/brasil.io/qconsp2019/#/).
+
+## O que são dados abertos?
+
+Segundo a [definição](http://opendefinition.org/) da [Open Knowledge Foundation](http://okfn.org/), os dados são considerados abertos quando:
+
+> Qualquer pessoa pode acessar, usar, modificar e compartilhar livremente para qualquer finalidade (sujeito a, no máximo, a requisitos que preservem a proveniência e a sua abertura).
+
+> Recomendo ver a apresentação que fizemos no [Open Data Day](https://r-ladies-sao-paulo.github.io/2023-03-open-data-day/slide-open-data-day.html).
+
+![](images/paste-6ACADB01.png){fig-align="center"}
+
+::: footer
+Fonte: <https://www.gov.br/governodigital/pt-br/dados-abertos>
+:::
+
+# Vamos a alguns exemplos de pacotes!
+
+## sidrar
+
+-   Pacote para obter dados do SIDRA (Sistema IBGE de Recuperação Automática).
+
+-   Acesso: <https://github.com/rpradosiqueira/sidrar>
+
+-   ✅ Disponível no CRAN
+
+-   ✅ Disponível no GitHub
+
+## censobr
+
+-   Pacote para obter de dados do Censo Demográfico Brasileiro.
+
+-   Acesso: <https://ipeagit.github.io/censobr/>
+
+-   ✅ Disponível no CRAN
+
+-   ✅ Disponível no GitHub
+
+## qualR
+
+-   Pacote para obter de dados sobre a poluição do ar em São Paulo e no Rio de Janeiro.
+
+-   Revisado por pares via ROpenSci.
+
+-   Acesso: <https://docs.ropensci.org/qualR/>
+
+-   ✅ Disponível no GitHub
+
+-   ✅ [Disponível no R Universe](https://ropensci.r-universe.dev/qualR#)
+
+## mananciais
+
+-   Pacote para obter dados sobre os mananciais de abastecimento da Região Metropolitana de São Paulo.
+
+-   Acesso: <https://beatrizmilz.github.io/mananciais/>
+
+-   ✅ Disponível no GitHub
+
+## reservatoriosbr
+
+-   Pacote para obter dados sobre os principais reservatórios brasileiros a partir da plataforma SAR-ANA e da ONS.
+
+-   Acesso: <https://brunomioto.github.io/reservatoriosBR/>
+
+-   ✅ Disponível no GitHub
+
+## flightsbr
+
+-   Pacote para obter dados de aeroportos e vôos no Brasil.
+
+-   Acesso: <https://ipeagit.github.io/flightsbr/>
+
+-   ✅ Disponível no CRAN
+
+-   ✅ Disponível no GitHub
+
+## microdatasus
+
+-   Pacote para obter microdados do Datasus.
+
+-   Existe um artigo científico sobre ele: <https://www.scielo.br/j/csp/a/gdJXqcrW5PPDHX8rwPDYL7F/>
+
+-   Acesso: <https://github.com/rfsaldanha/microdatasus>
+
+-   ✅ Disponível no GitHub
+
+## tjsp
+
+-   Pacote para obter dados do Tribunal de Justiça de São Paulo.
+
+-   Acesso: <https://tjsp.consudata.com.br/>
+
+-   ✅ Disponível no GitHub
+
+## abjData
+
+-   Pacote de dados úteis para a ABJ.
+
+-   Acesso: <https://abjur.github.io/abjData/>
+
+-   ✅ Disponível no GitHub
+
+
+## amphiBR
+
+-   Pacote R com dataset da publicação oficial da Lista de Anfíbios do Brasil publicada pela Sociedade Brasileira de Herpetologia.
+
+-   Acesso: <https://paulobarros.github.io/amphiBR/index.html>
+
+-   ✅ Disponível no GitHub
+
+
+## BrazilMet
+
+-   Pacote R para acessar dados meteorológicos das estações de monitoramento automáticas do INMET.
+
+-  Acesso: <https://github.com/FilgueirasR/BrazilMet>
+
+-   ✅ Disponível no GitHub
+
+## Conhecem outros??
+
+-   Queremos saber de outros pacotes de dados brasileiros!
+
+# Exemplos mais aprofundados: odbr e geobr!
+
+# Referência dos pacotes citados
+
+```{r}
+#| echo: false
+#| eval: true
+
+knitr::write_bib(c(
+  "geobr",
+  "odbr",
+  "sidrar",
+  "censobr",
+  "qualR",
+  "mananciais",
+  "reservatoriosBR",
+  "flightsbr",
+  "microdatasus",
+  "tjsp",
+  "abjData",
+  "amphiBR"
+), "packages.bib")
+```
+
+::: {#refs}
+:::
+
+
