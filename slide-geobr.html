@@ -438,8 +438,8 @@ Beatriz Milz
 <div class="cell" data-layout-align="center" data-hash="slide-geobr_cache/revealjs/unnamed-chunk-1_02e8bbf2d1d8f49fb5cb5d3412045248">
 <div class="cell-output-display">
 
-<div class="reactable html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-5a51998085a24e105654" style="width:auto;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-5a51998085a24e105654">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"function":["`read_country`","`read_region`","`read_state`","`read_meso_region`","`read_micro_region`","`read_intermediate_region`","`read_immediate_region`","`read_municipality`","`read_municipal_seat`","`read_weighting_area`","`read_census_tract`","`read_statistical_grid`","`read_metro_area`","`read_urban_area`","`read_amazon`","`read_biomes`","`read_conservation_units`","`read_disaster_risk_area`","`read_indigenous_land`","`read_semiarid`","`read_health_facilities`","`read_health_region`","`read_neighborhood`","`read_schools`","`read_comparable_areas`","`read_urban_concentrations`","`read_pop_arrangements`"],"geography":["Country","Region","States","Meso region","Micro region","Intermediate region","Immediate region","Municipality","Municipality seats (sedes municipais)","Census weighting area (área de ponderação)","Census tract (setor censitário)","Statistical Grid of 200 x 200 meters","Metropolitan areas","Urban footprints","Brazil's Legal Amazon","Biomes","Environmental Conservation Units","Disaster risk areas","Indigenous lands","Semi Arid region","Health facilities","Health regions and macro regions","Neighborhood limits","Schools","Historically comparable municipalities, aka Areas minimas comparaveis (AMCs)","Urban concentration areas (concentrações urbanas)","Population arrangements (arranjos populacioanis)"],"source":["IBGE","IBGE","IBGE","IBGE","IBGE","IBGE","IBGE","IBGE","IBGE","IBGE","IBGE","IBGE","IBGE","IBGE","MMA","IBGE","MMA","CEMADEN and IBGE","FUNAI","IBGE","CNES, DataSUS","DataSUS","IBGE","INEP","IBGE","IBGE","IBGE"]},"columns":[{"id":"function","name":"function","type":"character"},{"id":"geography","name":"geography","type":"character"},{"id":"source","name":"source","type":"character"}],"defaultPageSize":5,"className":"smaller","dataKey":"b125dea94351ad9a9e2bfbcbd78e3c47"},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
+<div class="reactable html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-c3c2b4f629b85b71ce65" style="width:auto;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-c3c2b4f629b85b71ce65">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"function":["`read_country`","`read_region`","`read_state`","`read_meso_region`","`read_micro_region`","`read_intermediate_region`","`read_immediate_region`","`read_municipality`","`read_municipal_seat`","`read_weighting_area`","`read_census_tract`","`read_statistical_grid`","`read_metro_area`","`read_urban_area`","`read_amazon`","`read_biomes`","`read_conservation_units`","`read_disaster_risk_area`","`read_indigenous_land`","`read_semiarid`","`read_health_facilities`","`read_health_region`","`read_neighborhood`","`read_schools`","`read_comparable_areas`","`read_urban_concentrations`","`read_pop_arrangements`"],"geography":["Country","Region","States","Meso region","Micro region","Intermediate region","Immediate region","Municipality","Municipality seats (sedes municipais)","Census weighting area (área de ponderação)","Census tract (setor censitário)","Statistical Grid of 200 x 200 meters","Metropolitan areas","Urban footprints","Brazil's Legal Amazon","Biomes","Environmental Conservation Units","Disaster risk areas","Indigenous lands","Semi Arid region","Health facilities","Health regions and macro regions","Neighborhood limits","Schools","Historically comparable municipalities, aka Areas minimas comparaveis (AMCs)","Urban concentration areas (concentrações urbanas)","Population arrangements (arranjos populacioanis)"],"source":["IBGE","IBGE","IBGE","IBGE","IBGE","IBGE","IBGE","IBGE","IBGE","IBGE","IBGE","IBGE","IBGE","IBGE","MMA","IBGE","MMA","CEMADEN and IBGE","FUNAI","IBGE","CNES, DataSUS","DataSUS","IBGE","INEP","IBGE","IBGE","IBGE"]},"columns":[{"id":"function","name":"function","type":"character"},{"id":"geography","name":"geography","type":"character"},{"id":"source","name":"source","type":"character"}],"defaultPageSize":5,"className":"smaller","dataKey":"b125dea94351ad9a9e2bfbcbd78e3c47"},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </section>
@@ -701,13 +701,52 @@ Geodetic CRS:  SIRGAS 2000
 <section id="section" class="slide level2">
 <h2></h2>
 <p>Localização das escolas estaduais e escolas privadas no município de São Paulo, que oferecem Ensino Médio</p>
+<div class="cell" data-layout-align="center" data-hash="slide-geobr_cache/revealjs/unnamed-chunk-22_d3529a6bbb12a6ad43bd8cd6400858b7">
+<details>
+<summary>Ver código</summary>
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1"></a><span class="fu">library</span>(ggspatial)</span>
+<span id="cb26-2"><a href="#cb26-2"></a>ensino_medio_sao_paulo <span class="sc">|&gt;</span></span>
+<span id="cb26-3"><a href="#cb26-3"></a>  <span class="fu">filter</span>(government_level <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"Estadual"</span>, <span class="st">"Privada"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb26-4"><a href="#cb26-4"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb26-5"><a href="#cb26-5"></a>  <span class="fu">geom_sf</span>(<span class="at">data =</span> muni_sp) <span class="sc">+</span></span>
+<span id="cb26-6"><a href="#cb26-6"></a>  <span class="fu">geom_sf</span>(<span class="fu">aes</span>(<span class="at">color =</span> government_level, <span class="at">alpha =</span> <span class="fl">0.1</span>), <span class="at">show.legend =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb26-7"><a href="#cb26-7"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span> government_level) <span class="sc">+</span></span>
+<span id="cb26-8"><a href="#cb26-8"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Longitude"</span>,</span>
+<span id="cb26-9"><a href="#cb26-9"></a>       <span class="at">y =</span> <span class="st">"Latitude"</span>) <span class="sc">+</span></span>
+<span id="cb26-10"><a href="#cb26-10"></a>  <span class="fu">scale_fill_viridis_d</span>(<span class="at">begin =</span> <span class="fl">0.2</span>, <span class="at">end =</span> <span class="fl">0.9</span>) <span class="sc">+</span></span>
+<span id="cb26-11"><a href="#cb26-11"></a>  <span class="fu">theme</span>(<span class="at">legend.spacing.x =</span> <span class="fu">unit</span>(<span class="fl">1.0</span>, <span class="st">'cm'</span>)) <span class="sc">+</span></span>
+<span id="cb26-12"><a href="#cb26-12"></a>  <span class="fu">theme_bw</span>() <span class="sc">+</span></span>
+<span id="cb26-13"><a href="#cb26-13"></a>  <span class="fu">theme</span>(</span>
+<span id="cb26-14"><a href="#cb26-14"></a>    <span class="at">panel.grid.major =</span> <span class="fu">element_line</span>(</span>
+<span id="cb26-15"><a href="#cb26-15"></a>      <span class="at">color =</span> <span class="fu">gray</span>(<span class="fl">0.9</span>),</span>
+<span id="cb26-16"><a href="#cb26-16"></a>      <span class="at">linetype =</span> <span class="st">"dashed"</span>,</span>
+<span id="cb26-17"><a href="#cb26-17"></a>      <span class="at">size =</span> <span class="fl">0.1</span></span>
+<span id="cb26-18"><a href="#cb26-18"></a>    ),</span>
+<span id="cb26-19"><a href="#cb26-19"></a>    <span class="at">panel.background =</span> <span class="fu">element_rect</span>(<span class="at">fill =</span> <span class="st">"white"</span>)</span>
+<span id="cb26-20"><a href="#cb26-20"></a>  ) <span class="sc">+</span></span>
+<span id="cb26-21"><a href="#cb26-21"></a>  <span class="fu">theme</span>(</span>
+<span id="cb26-22"><a href="#cb26-22"></a>    <span class="at">axis.text.y =</span> <span class="fu">element_text</span>(</span>
+<span id="cb26-23"><a href="#cb26-23"></a>      <span class="at">angle =</span> <span class="dv">90</span>,</span>
+<span id="cb26-24"><a href="#cb26-24"></a>      <span class="at">hjust =</span> <span class="fl">0.5</span>,</span>
+<span id="cb26-25"><a href="#cb26-25"></a>      <span class="at">size =</span> <span class="dv">8</span></span>
+<span id="cb26-26"><a href="#cb26-26"></a>    ),</span>
+<span id="cb26-27"><a href="#cb26-27"></a>    <span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">8</span>),</span>
+<span id="cb26-28"><a href="#cb26-28"></a>    <span class="at">axis.title.y =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="fu">rel</span>(<span class="fl">0.8</span>)),</span>
+<span id="cb26-29"><a href="#cb26-29"></a>    <span class="at">axis.title.x =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="fu">rel</span>(<span class="fl">0.8</span>)),</span>
+<span id="cb26-30"><a href="#cb26-30"></a>    <span class="at">legend.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="fu">rel</span>(<span class="fl">0.8</span>))</span>
+<span id="cb26-31"><a href="#cb26-31"></a>  )</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="slide-geobr_files/figure-revealjs/unnamed-chunk-22-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
 
-<img data-src="slide-geobr_files/figure-revealjs/unnamed-chunk-22-1.png" width="960" class="r-stretch quarto-figure-center"></section>
-<section id="materiais" class="slide level2">
-<h2>Materiais</h2>
-
-
-<img src="site_libs/quarto-contrib/quarto-project/beatrizmilz/rladies/logo.png" class="slide-logo r-stretch"><div class="footer footer-default">
+<p><img src="site_libs/quarto-contrib/quarto-project/beatrizmilz/rladies/logo.png" class="slide-logo"></p>
+<div class="footer footer-default">
 <p>Slides feitos com <a href="https://quarto.org/docs/presentations/revealjs/index.html">Quarto</a> e <a href="https://github.com/beatrizmilz/quarto-rladies-theme#quarto-r-ladies-theme">Quarto R-Ladies Theme</a>.</p>
 </div>
 </section></section>
