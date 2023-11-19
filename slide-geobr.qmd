@@ -141,7 +141,7 @@ glimpse(brasil_municipios)
 
 ```{r}
 muni_sp <- brasil_municipios |> 
-  filter(code_muni == 3550308) 
+  dplyr::filter(code_muni == 3550308) 
 ```
 
 ## Visualizando o município de São Paulo
@@ -168,7 +168,7 @@ glimpse(escolas_brasil)
 
 ```{r}
 escolas_saopaulo <- escolas_brasil |> 
-  filter(abbrev_state == "SP",
+  dplyr::filter(abbrev_state == "SP",
          name_muni == "São Paulo") 
 ```
 
@@ -176,14 +176,20 @@ escolas_saopaulo <- escolas_brasil |>
 
 ```{r}
 escolas_saopaulo |> 
-  count(government_level)
+  dplyr::count(government_level)
 ```
 
 ## Escolas que oferecem Ensino Médio
 
 ```{r}
-ensino_medio_sao_paulo <- escolas_saopaulo |> 
-  filter(str_detect(education_level, "Ensino Médio"))
+ensino_medio_sao_paulo <- escolas_saopaulo |>
+  dplyr::filter(stringr::str_detect(education_level, "Ensino Médio")) |>
+  dplyr::group_by(government_level) |> 
+  dplyr::mutate(
+    numero_linhas = dplyr::n(),
+    nome_label = paste0(government_level, " (N=", numero_linhas, ")")
+  ) |> 
+dplyr::ungroup()
 ```
 
 # Vamos visualizar?
@@ -199,6 +205,7 @@ escolas_saopaulo |>
 ## Visualizando as escolas e o município
 
 ```{r}
+#| code-line-numbers: "3"
 escolas_saopaulo |> 
   ggplot() +
   geom_sf(data = muni_sp) +
@@ -208,6 +215,7 @@ escolas_saopaulo |>
 ## Visualizando as escolas por `government_level`
 
 ```{r}
+#| code-line-numbers: "4"
 escolas_saopaulo |> 
   ggplot() +
   geom_sf(data = muni_sp) +
@@ -217,21 +225,25 @@ escolas_saopaulo |>
 ## Visualizando as escolas por `government_level`
 
 ```{r}
+#| code-line-numbers: "5|4"
 escolas_saopaulo |> 
   ggplot() +
   geom_sf(data = muni_sp) +
   geom_sf(aes(color = government_level), show.legend = FALSE) +
-  facet_wrap(~government_level)
+  facet_wrap(~government_level, nrow = 1)
 ```
 
 ## Visualizando as escolas que oferecem Ensino Médio
 
 ```{r}
+#| code-line-numbers: "5"
 ensino_medio_sao_paulo |>
   ggplot() +
   geom_sf(data = muni_sp) +
-  geom_sf(aes(color = government_level, alpha = 0.1), show.legend = FALSE) +
-  facet_wrap( ~ government_level)
+  geom_sf(aes(color = government_level, 
+              alpha = 0.1), 
+          show.legend = FALSE) +
+  facet_wrap(~ government_level, nrow = 1)
 ```
 
 ## 
@@ -248,7 +260,7 @@ ensino_medio_sao_paulo |>
   ggplot() +
   geom_sf(data = muni_sp) +
   geom_sf(aes(color = government_level, alpha = 0.1), show.legend = FALSE) +
-  facet_wrap(~ government_level) +
+  facet_wrap(~ nome_label) +
   labs(x = "Longitude",
        y = "Latitude") +
   scale_fill_viridis_d(begin = 0.2, end = 0.9) +

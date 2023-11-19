@@ -559,9 +559,9 @@ $ geom         &lt;MULTIPOLYGON [°]&gt; MULTIPOLYGON (((-62.2462 -1..., MULTIPO
 <img data-src="img/codigo-muni.png" style="width:80.0%" class="r-stretch quarto-figure-center"></section>
 <section id="filtrando-o-município-de-são-paulo" class="slide level2">
 <h2>Filtrando o município de São Paulo</h2>
-<div class="cell" data-layout-align="center" data-hash="slide-geobr_cache/revealjs/unnamed-chunk-10_89d93c144517af4417250347a534fe57">
+<div class="cell" data-layout-align="center" data-hash="slide-geobr_cache/revealjs/unnamed-chunk-10_a42c22b06b56b6b3373ce5eae07ab7fa">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1"></a>muni_sp <span class="ot">&lt;-</span> brasil_municipios <span class="sc">|&gt;</span> </span>
-<span id="cb12-2"><a href="#cb12-2"></a>  <span class="fu">filter</span>(code_muni <span class="sc">==</span> <span class="dv">3550308</span>) </span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb12-2"><a href="#cb12-2"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(code_muni <span class="sc">==</span> <span class="dv">3550308</span>) </span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="visualizando-o-município-de-são-paulo" class="slide level2">
@@ -610,17 +610,17 @@ $ geom                           &lt;POINT [°]&gt; POINT (-63.85401 -8.758459),
 </section>
 <section id="escolas-no-município-de-são-paulo" class="slide level2">
 <h2>Escolas no município de São Paulo</h2>
-<div class="cell" data-layout-align="center" data-hash="slide-geobr_cache/revealjs/unnamed-chunk-14_7d526c78d8bf21c42fc8bfd671dff1f7">
+<div class="cell" data-layout-align="center" data-hash="slide-geobr_cache/revealjs/unnamed-chunk-14_a9bcc324dc702f8b497188b243b4b46d">
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1"></a>escolas_saopaulo <span class="ot">&lt;-</span> escolas_brasil <span class="sc">|&gt;</span> </span>
-<span id="cb17-2"><a href="#cb17-2"></a>  <span class="fu">filter</span>(abbrev_state <span class="sc">==</span> <span class="st">"SP"</span>,</span>
+<span id="cb17-2"><a href="#cb17-2"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(abbrev_state <span class="sc">==</span> <span class="st">"SP"</span>,</span>
 <span id="cb17-3"><a href="#cb17-3"></a>         name_muni <span class="sc">==</span> <span class="st">"São Paulo"</span>) </span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="escolas-por-government_level" class="slide level2">
 <h2>Escolas por <code>government_level</code></h2>
-<div class="cell" data-layout-align="center" data-hash="slide-geobr_cache/revealjs/unnamed-chunk-15_0a5d37cfaf54300f61a473076c87658b">
+<div class="cell" data-layout-align="center" data-hash="slide-geobr_cache/revealjs/unnamed-chunk-15_3e608bd6477f57e67a512376883818ba">
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1"></a>escolas_saopaulo <span class="sc">|&gt;</span> </span>
-<span id="cb18-2"><a href="#cb18-2"></a>  <span class="fu">count</span>(government_level)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb18-2"><a href="#cb18-2"></a>  dplyr<span class="sc">::</span><span class="fu">count</span>(government_level)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Simple feature collection with 4 features and 2 fields
 Geometry type: MULTIPOINT
@@ -637,9 +637,15 @@ Geodetic CRS:  SIRGAS 2000
 </section>
 <section id="escolas-que-oferecem-ensino-médio" class="slide level2">
 <h2>Escolas que oferecem Ensino Médio</h2>
-<div class="cell" data-layout-align="center" data-hash="slide-geobr_cache/revealjs/unnamed-chunk-16_b358aa1833687bd1defb2f32c765f5bb">
-<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1"></a>ensino_medio_sao_paulo <span class="ot">&lt;-</span> escolas_saopaulo <span class="sc">|&gt;</span> </span>
-<span id="cb20-2"><a href="#cb20-2"></a>  <span class="fu">filter</span>(<span class="fu">str_detect</span>(education_level, <span class="st">"Ensino Médio"</span>))</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-layout-align="center" data-hash="slide-geobr_cache/revealjs/unnamed-chunk-16_7513d16664ff9f9acbfb6bce0cab0b47">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1"></a>ensino_medio_sao_paulo <span class="ot">&lt;-</span> escolas_saopaulo <span class="sc">|&gt;</span></span>
+<span id="cb20-2"><a href="#cb20-2"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(stringr<span class="sc">::</span><span class="fu">str_detect</span>(education_level, <span class="st">"Ensino Médio"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb20-3"><a href="#cb20-3"></a>  dplyr<span class="sc">::</span><span class="fu">group_by</span>(government_level) <span class="sc">|&gt;</span> </span>
+<span id="cb20-4"><a href="#cb20-4"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(</span>
+<span id="cb20-5"><a href="#cb20-5"></a>    <span class="at">numero_linhas =</span> dplyr<span class="sc">::</span><span class="fu">n</span>(),</span>
+<span id="cb20-6"><a href="#cb20-6"></a>    <span class="at">nome_label =</span> <span class="fu">paste0</span>(government_level, <span class="st">" (N="</span>, numero_linhas, <span class="st">")"</span>)</span>
+<span id="cb20-7"><a href="#cb20-7"></a>  ) <span class="sc">|&gt;</span> </span>
+<span id="cb20-8"><a href="#cb20-8"></a>dplyr<span class="sc">::</span><span class="fu">ungroup</span>()</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section></section>
 <section>
@@ -658,8 +664,8 @@ Geodetic CRS:  SIRGAS 2000
 <img data-src="slide-geobr_files/figure-revealjs/unnamed-chunk-17-1.png" width="960" class="r-stretch quarto-figure-center"></section>
 <section id="visualizando-as-escolas-e-o-município" class="slide level2">
 <h2>Visualizando as escolas e o município</h2>
-<div class="cell" data-layout-align="center" data-hash="slide-geobr_cache/revealjs/unnamed-chunk-18_fbb8629bc1e93e35c6c35c92ce93d455">
-<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1"></a>escolas_saopaulo <span class="sc">|&gt;</span> </span>
+<div class="cell" data-layout-align="center" data-hash="slide-geobr_cache/revealjs/unnamed-chunk-18_1e40878a2756b1f2b6f81fb38cd5c99f">
+<div class="sourceCode cell-code" id="cb22" data-code-line-numbers="3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1"></a>escolas_saopaulo <span class="sc">|&gt;</span> </span>
 <span id="cb22-2"><a href="#cb22-2"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
 <span id="cb22-3"><a href="#cb22-3"></a>  <span class="fu">geom_sf</span>(<span class="at">data =</span> muni_sp) <span class="sc">+</span></span>
 <span id="cb22-4"><a href="#cb22-4"></a>  <span class="fu">geom_sf</span>()</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -668,8 +674,8 @@ Geodetic CRS:  SIRGAS 2000
 <img data-src="slide-geobr_files/figure-revealjs/unnamed-chunk-18-1.png" width="960" class="r-stretch quarto-figure-center"></section>
 <section id="visualizando-as-escolas-por-government_level" class="slide level2">
 <h2>Visualizando as escolas por <code>government_level</code></h2>
-<div class="cell" data-layout-align="center" data-hash="slide-geobr_cache/revealjs/unnamed-chunk-19_a7cc8008b86202f409565d2a080ea2db">
-<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1"></a>escolas_saopaulo <span class="sc">|&gt;</span> </span>
+<div class="cell" data-layout-align="center" data-hash="slide-geobr_cache/revealjs/unnamed-chunk-19_73ede11de911e605a766267b85c40506">
+<div class="sourceCode cell-code" id="cb23" data-code-line-numbers="4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1"></a>escolas_saopaulo <span class="sc">|&gt;</span> </span>
 <span id="cb23-2"><a href="#cb23-2"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
 <span id="cb23-3"><a href="#cb23-3"></a>  <span class="fu">geom_sf</span>(<span class="at">data =</span> muni_sp) <span class="sc">+</span></span>
 <span id="cb23-4"><a href="#cb23-4"></a>  <span class="fu">geom_sf</span>(<span class="fu">aes</span>(<span class="at">color =</span> government_level))</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -678,30 +684,32 @@ Geodetic CRS:  SIRGAS 2000
 <img data-src="slide-geobr_files/figure-revealjs/unnamed-chunk-19-1.png" width="960" class="r-stretch quarto-figure-center"></section>
 <section id="visualizando-as-escolas-por-government_level-1" class="slide level2">
 <h2>Visualizando as escolas por <code>government_level</code></h2>
-<div class="cell" data-layout-align="center" data-hash="slide-geobr_cache/revealjs/unnamed-chunk-20_ab1b141d0fe6ddd8699e4a5989fb66fb">
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1"></a>escolas_saopaulo <span class="sc">|&gt;</span> </span>
+<div class="cell" data-layout-align="center" data-hash="slide-geobr_cache/revealjs/unnamed-chunk-20_b99aad3496b3cd49962511bb2721165b">
+<div class="sourceCode cell-code" id="cb24" data-code-line-numbers="5|4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1"></a>escolas_saopaulo <span class="sc">|&gt;</span> </span>
 <span id="cb24-2"><a href="#cb24-2"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
 <span id="cb24-3"><a href="#cb24-3"></a>  <span class="fu">geom_sf</span>(<span class="at">data =</span> muni_sp) <span class="sc">+</span></span>
 <span id="cb24-4"><a href="#cb24-4"></a>  <span class="fu">geom_sf</span>(<span class="fu">aes</span>(<span class="at">color =</span> government_level), <span class="at">show.legend =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
-<span id="cb24-5"><a href="#cb24-5"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>government_level)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb24-5"><a href="#cb24-5"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>government_level, <span class="at">nrow =</span> <span class="dv">1</span>)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
 <img data-src="slide-geobr_files/figure-revealjs/unnamed-chunk-20-1.png" width="960" class="r-stretch quarto-figure-center"></section>
 <section id="visualizando-as-escolas-que-oferecem-ensino-médio" class="slide level2">
 <h2>Visualizando as escolas que oferecem Ensino Médio</h2>
-<div class="cell" data-layout-align="center" data-hash="slide-geobr_cache/revealjs/unnamed-chunk-21_537b143f05fea99cde95abf4b2921bdf">
-<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1"></a>ensino_medio_sao_paulo <span class="sc">|&gt;</span></span>
+<div class="cell" data-layout-align="center" data-hash="slide-geobr_cache/revealjs/unnamed-chunk-21_a201f4d1aeac699702892f99c0354e44">
+<div class="sourceCode cell-code" id="cb25" data-code-line-numbers="5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1"></a>ensino_medio_sao_paulo <span class="sc">|&gt;</span></span>
 <span id="cb25-2"><a href="#cb25-2"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
 <span id="cb25-3"><a href="#cb25-3"></a>  <span class="fu">geom_sf</span>(<span class="at">data =</span> muni_sp) <span class="sc">+</span></span>
-<span id="cb25-4"><a href="#cb25-4"></a>  <span class="fu">geom_sf</span>(<span class="fu">aes</span>(<span class="at">color =</span> government_level, <span class="at">alpha =</span> <span class="fl">0.1</span>), <span class="at">show.legend =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
-<span id="cb25-5"><a href="#cb25-5"></a>  <span class="fu">facet_wrap</span>( <span class="sc">~</span> government_level)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb25-4"><a href="#cb25-4"></a>  <span class="fu">geom_sf</span>(<span class="fu">aes</span>(<span class="at">color =</span> government_level, </span>
+<span id="cb25-5"><a href="#cb25-5"></a>              <span class="at">alpha =</span> <span class="fl">0.1</span>), </span>
+<span id="cb25-6"><a href="#cb25-6"></a>          <span class="at">show.legend =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb25-7"><a href="#cb25-7"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span> government_level, <span class="at">nrow =</span> <span class="dv">1</span>)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
 <img data-src="slide-geobr_files/figure-revealjs/unnamed-chunk-21-1.png" width="960" class="r-stretch quarto-figure-center"></section>
 <section id="section" class="slide level2">
 <h2></h2>
 <p>Localização das escolas estaduais e escolas privadas no município de São Paulo, que oferecem Ensino Médio</p>
-<div class="cell" data-layout-align="center" data-hash="slide-geobr_cache/revealjs/unnamed-chunk-22_d3529a6bbb12a6ad43bd8cd6400858b7">
+<div class="cell" data-layout-align="center" data-hash="slide-geobr_cache/revealjs/unnamed-chunk-22_6f92437f7c3898413c756a7433a50289">
 <details>
 <summary>Ver código</summary>
 <div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1"></a><span class="fu">library</span>(ggspatial)</span>
@@ -710,7 +718,7 @@ Geodetic CRS:  SIRGAS 2000
 <span id="cb26-4"><a href="#cb26-4"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
 <span id="cb26-5"><a href="#cb26-5"></a>  <span class="fu">geom_sf</span>(<span class="at">data =</span> muni_sp) <span class="sc">+</span></span>
 <span id="cb26-6"><a href="#cb26-6"></a>  <span class="fu">geom_sf</span>(<span class="fu">aes</span>(<span class="at">color =</span> government_level, <span class="at">alpha =</span> <span class="fl">0.1</span>), <span class="at">show.legend =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
-<span id="cb26-7"><a href="#cb26-7"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span> government_level) <span class="sc">+</span></span>
+<span id="cb26-7"><a href="#cb26-7"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span> nome_label) <span class="sc">+</span></span>
 <span id="cb26-8"><a href="#cb26-8"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Longitude"</span>,</span>
 <span id="cb26-9"><a href="#cb26-9"></a>       <span class="at">y =</span> <span class="st">"Latitude"</span>) <span class="sc">+</span></span>
 <span id="cb26-10"><a href="#cb26-10"></a>  <span class="fu">scale_fill_viridis_d</span>(<span class="at">begin =</span> <span class="fl">0.2</span>, <span class="at">end =</span> <span class="fl">0.9</span>) <span class="sc">+</span></span>

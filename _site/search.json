@@ -81,7 +81,7 @@
     "href": "slide-geobr.html#filtrando-o-município-de-são-paulo",
     "title": "Conhecendo o pacote geobr",
     "section": "Filtrando o município de São Paulo",
-    "text": "Filtrando o município de São Paulo\n\nmuni_sp &lt;- brasil_municipios |&gt; \n  filter(code_muni == 3550308)"
+    "text": "Filtrando o município de São Paulo\n\nmuni_sp &lt;- brasil_municipios |&gt; \n  dplyr::filter(code_muni == 3550308)"
   },
   {
     "objectID": "slide-geobr.html#visualizando-o-município-de-são-paulo",
@@ -109,21 +109,21 @@
     "href": "slide-geobr.html#escolas-no-município-de-são-paulo",
     "title": "Conhecendo o pacote geobr",
     "section": "Escolas no município de São Paulo",
-    "text": "Escolas no município de São Paulo\n\nescolas_saopaulo &lt;- escolas_brasil |&gt; \n  filter(abbrev_state == \"SP\",\n         name_muni == \"São Paulo\")"
+    "text": "Escolas no município de São Paulo\n\nescolas_saopaulo &lt;- escolas_brasil |&gt; \n  dplyr::filter(abbrev_state == \"SP\",\n         name_muni == \"São Paulo\")"
   },
   {
     "objectID": "slide-geobr.html#escolas-por-government_level",
     "href": "slide-geobr.html#escolas-por-government_level",
     "title": "Conhecendo o pacote geobr",
     "section": "Escolas por government_level",
-    "text": "Escolas por government_level\n\nescolas_saopaulo |&gt; \n  count(government_level)\n\nSimple feature collection with 4 features and 2 fields\nGeometry type: MULTIPOINT\nDimension:     XY\nBounding box:  xmin: -46.8074 ymin: -23.90918 xmax: -46.36614 ymax: -23.3996\nGeodetic CRS:  SIRGAS 2000\n  government_level    n                           geom\n1         Estadual 1275 MULTIPOINT ((-46.75558 -23....\n2          Federal    4 MULTIPOINT ((-46.62169 -23....\n3        Municipal 1563 MULTIPOINT ((-46.7141 -23.8...\n4          Privada 5272 MULTIPOINT ((-46.7133 -23.8..."
+    "text": "Escolas por government_level\n\nescolas_saopaulo |&gt; \n  dplyr::count(government_level)\n\nSimple feature collection with 4 features and 2 fields\nGeometry type: MULTIPOINT\nDimension:     XY\nBounding box:  xmin: -46.8074 ymin: -23.90918 xmax: -46.36614 ymax: -23.3996\nGeodetic CRS:  SIRGAS 2000\n  government_level    n                           geom\n1         Estadual 1275 MULTIPOINT ((-46.75558 -23....\n2          Federal    4 MULTIPOINT ((-46.62169 -23....\n3        Municipal 1563 MULTIPOINT ((-46.7141 -23.8...\n4          Privada 5272 MULTIPOINT ((-46.7133 -23.8..."
   },
   {
     "objectID": "slide-geobr.html#escolas-que-oferecem-ensino-médio",
     "href": "slide-geobr.html#escolas-que-oferecem-ensino-médio",
     "title": "Conhecendo o pacote geobr",
     "section": "Escolas que oferecem Ensino Médio",
-    "text": "Escolas que oferecem Ensino Médio\n\nensino_medio_sao_paulo &lt;- escolas_saopaulo |&gt; \n  filter(str_detect(education_level, \"Ensino Médio\"))"
+    "text": "Escolas que oferecem Ensino Médio\n\nensino_medio_sao_paulo &lt;- escolas_saopaulo |&gt;\n  dplyr::filter(stringr::str_detect(education_level, \"Ensino Médio\")) |&gt;\n  dplyr::group_by(government_level) |&gt; \n  dplyr::mutate(\n    numero_linhas = dplyr::n(),\n    nome_label = paste0(government_level, \" (N=\", numero_linhas, \")\")\n  ) |&gt; \ndplyr::ungroup()"
   },
   {
     "objectID": "slide-geobr.html#visualizando-as-escolas",
@@ -151,21 +151,21 @@
     "href": "slide-geobr.html#visualizando-as-escolas-por-government_level-1",
     "title": "Conhecendo o pacote geobr",
     "section": "Visualizando as escolas por government_level",
-    "text": "Visualizando as escolas por government_level\n\nescolas_saopaulo |&gt; \n  ggplot() +\n  geom_sf(data = muni_sp) +\n  geom_sf(aes(color = government_level), show.legend = FALSE) +\n  facet_wrap(~government_level)"
+    "text": "Visualizando as escolas por government_level\n\nescolas_saopaulo |&gt; \n  ggplot() +\n  geom_sf(data = muni_sp) +\n  geom_sf(aes(color = government_level), show.legend = FALSE) +\n  facet_wrap(~government_level, nrow = 1)"
   },
   {
     "objectID": "slide-geobr.html#visualizando-as-escolas-que-oferecem-ensino-médio",
     "href": "slide-geobr.html#visualizando-as-escolas-que-oferecem-ensino-médio",
     "title": "Conhecendo o pacote geobr",
     "section": "Visualizando as escolas que oferecem Ensino Médio",
-    "text": "Visualizando as escolas que oferecem Ensino Médio\n\nensino_medio_sao_paulo |&gt;\n  ggplot() +\n  geom_sf(data = muni_sp) +\n  geom_sf(aes(color = government_level, alpha = 0.1), show.legend = FALSE) +\n  facet_wrap( ~ government_level)"
+    "text": "Visualizando as escolas que oferecem Ensino Médio\n\nensino_medio_sao_paulo |&gt;\n  ggplot() +\n  geom_sf(data = muni_sp) +\n  geom_sf(aes(color = government_level, \n              alpha = 0.1), \n          show.legend = FALSE) +\n  facet_wrap(~ government_level, nrow = 1)"
   },
   {
     "objectID": "slide-geobr.html#section",
     "href": "slide-geobr.html#section",
     "title": "Conhecendo o pacote geobr",
     "section": "",
-    "text": "Localização das escolas estaduais e escolas privadas no município de São Paulo, que oferecem Ensino Médio\n\n\nVer código\nlibrary(ggspatial)\nensino_medio_sao_paulo |&gt;\n  filter(government_level %in% c(\"Estadual\", \"Privada\")) |&gt;\n  ggplot() +\n  geom_sf(data = muni_sp) +\n  geom_sf(aes(color = government_level, alpha = 0.1), show.legend = FALSE) +\n  facet_wrap(~ government_level) +\n  labs(x = \"Longitude\",\n       y = \"Latitude\") +\n  scale_fill_viridis_d(begin = 0.2, end = 0.9) +\n  theme(legend.spacing.x = unit(1.0, 'cm')) +\n  theme_bw() +\n  theme(\n    panel.grid.major = element_line(\n      color = gray(0.9),\n      linetype = \"dashed\",\n      size = 0.1\n    ),\n    panel.background = element_rect(fill = \"white\")\n  ) +\n  theme(\n    axis.text.y = element_text(\n      angle = 90,\n      hjust = 0.5,\n      size = 8\n    ),\n    axis.text.x = element_text(size = 8),\n    axis.title.y = element_text(size = rel(0.8)),\n    axis.title.x = element_text(size = rel(0.8)),\n    legend.title = element_text(size = rel(0.8))\n  )\n\n\n\n\n\n\n\n\n\n\n\n\nSlides feitos com Quarto e Quarto R-Ladies Theme."
+    "text": "Localização das escolas estaduais e escolas privadas no município de São Paulo, que oferecem Ensino Médio\n\n\nVer código\nlibrary(ggspatial)\nensino_medio_sao_paulo |&gt;\n  filter(government_level %in% c(\"Estadual\", \"Privada\")) |&gt;\n  ggplot() +\n  geom_sf(data = muni_sp) +\n  geom_sf(aes(color = government_level, alpha = 0.1), show.legend = FALSE) +\n  facet_wrap(~ nome_label) +\n  labs(x = \"Longitude\",\n       y = \"Latitude\") +\n  scale_fill_viridis_d(begin = 0.2, end = 0.9) +\n  theme(legend.spacing.x = unit(1.0, 'cm')) +\n  theme_bw() +\n  theme(\n    panel.grid.major = element_line(\n      color = gray(0.9),\n      linetype = \"dashed\",\n      size = 0.1\n    ),\n    panel.background = element_rect(fill = \"white\")\n  ) +\n  theme(\n    axis.text.y = element_text(\n      angle = 90,\n      hjust = 0.5,\n      size = 8\n    ),\n    axis.text.x = element_text(size = 8),\n    axis.title.y = element_text(size = rel(0.8)),\n    axis.title.x = element_text(size = rel(0.8)),\n    legend.title = element_text(size = rel(0.8))\n  )\n\n\n\n\n\n\n\n\n\n\n\n\nSlides feitos com Quarto e Quarto R-Ladies Theme."
   },
   {
     "objectID": "slide-rladies.html#o-que-é-a-r-ladies",
