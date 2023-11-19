@@ -5,7 +5,10 @@ format: html
 editor: visual
 ---
 
-## Formato
+-   **Preciso levar meu notebook?**
+
+Este evento será uma apresentação expositiva, então não é necessário levar o notebook.
+
 
 -   **O evento será transmitido online?**
 
