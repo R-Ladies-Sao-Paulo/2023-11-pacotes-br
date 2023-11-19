@@ -525,6 +525,27 @@
     "text": "siconvr\n\nPacote R para acessar dados da Plataforma +Brasil (anteriormente SICONV).\nAcesso: https://github.com/meirelesff/siconvr\nAtualmente está sem funcionar."
   },
   {
+    "objectID": "slide-pacotes-br.html#pnadcibge",
+    "href": "slide-pacotes-br.html#pnadcibge",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "PNADcIBGE",
+    "text": "PNADcIBGE\n\nPacote R para acessar dados da PNAD Contínua do IBGE.\nAcesso: https://github.com/Gabriel-Assuncao/PNADcIBGE\n✅ Disponível no CRAN\n✅ Disponível no GitHub"
+  },
+  {
+    "objectID": "slide-pacotes-br.html#ecodados",
+    "href": "slide-pacotes-br.html#ecodados",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "ecodados",
+    "text": "ecodados\n\nPacote R para acessar dados úteis para ecologia.\nATENÇÃO: Alguns dados são simulados! Leia a documentação da função para saber quais são.\nAcesso: https://paternogbc.github.io/ecodados/index.html\n✅ Disponível no GitHub"
+  },
+  {
+    "objectID": "slide-pacotes-br.html#base-dos-dados",
+    "href": "slide-pacotes-br.html#base-dos-dados",
+    "title": "Pacotes em R de dados brasileiros",
+    "section": "Base dos dados",
+    "text": "Base dos dados\n\nO Base dos Dados é um projeto amplo.\nTem um pacote em R.\nAcesso: https://basedosdados.github.io/mais/"
+  },
+  {
     "objectID": "slide-pacotes-br.html#conhecem-outros",
     "href": "slide-pacotes-br.html#conhecem-outros",
     "title": "Pacotes em R de dados brasileiros",
