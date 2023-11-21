@@ -8,6 +8,8 @@ editor: visual
 | Slide                                                                                              | Ministrante   |
 |----------------------------------------------|--------------------------|
 | [Conhecendo as R-Ladies São Paulo](slide-rladies.qmd){target="_blank"}                             | Luana Antunes |
-| [Pacotes em R de dados brasileiros](slide-pacotes-br.qmd){target="_blank"}                    | Beatriz Milz  |
-| [Introdução ao pacote odbr](https://hsvab.github.io/latinr2023-championsprogram/){target="_blank"} | Haydee Svab   |
+| [rOpenSci o o Programa de campeões/campeãs](https://hsvab.github.io/2023-11-22-MeetUp-Rladies-SP_ropensci/){target="_blank"}                                              | Haydee Svab |
+| [Pacotes em R de dados brasileiros](slide-pacotes-br.qmd){target="_blank"}                         | Beatriz Milz  |
+| [Introdução ao pacote odbr](https://hsvab.github.io/2023-11-22-MeetUp-Rladies-SP_odbr/){target="_blank"} | Haydee Svab   |
 | [Introdução ao pacote geobr](slide-geobr.qmd){target="_blank"}                                     | Beatriz Milz  |
+
