@@ -42,19 +42,17 @@ Fonte: [About us - R-Ladies](https://rladies.org/about-us/), [Meetup - São Paul
 
 ## R-Ladies no Brasil
 
-Existem vários capítulos no Brasil.
-O capítulo de Goiânia realiza mensalmente eventos online.
+Existem vários capítulos no Brasil. O capítulo de Goiânia realiza mensalmente eventos online.
 
 Capítulos ativos (realizaram eventos em 2023):
 
-- [R-Ladies Goiânia](https://www.meetup.com/rladies-goiania/)
+-   [R-Ladies Goiânia](https://www.meetup.com/rladies-goiania/)
 
-- [R-Ladies Vitória](https://www.meetup.com/rladies-vitoria/)
+-   [R-Ladies Vitória](https://www.meetup.com/rladies-vitoria/)
 
-- [R-Ladies Salvador](https://www.meetup.com/rladies-salvador/)
+-   [R-Ladies Salvador](https://www.meetup.com/rladies-salvador/)
 
-- [R-Ladies Ribeirão Preto](https://www.meetup.com/rladies-ribeirao-preto/)
-
+-   [R-Ladies Ribeirão Preto](https://www.meetup.com/rladies-ribeirao-preto/)
 
 ## R-Ladies em São Paulo
 
@@ -63,7 +61,6 @@ knitr::include_graphics("https://beatrizmilz.github.io/slidesR/rladies/img/1meet
 ```
 
 -   **Primeiro encontro da R-Ladies São Paulo** - Agosto/2018
-
 
 ## GuGuDaDados
 
@@ -75,21 +72,21 @@ Primeira edição em novembro/2022.
 
 -   Textos escritos por pessoas da comunidade
 
-<center><embed type="text/html" src="https://rladies-sp.org/" width="90%" height="500"> </center>
+<center>
 
-## Apoio financeiro 
+<embed type="text/html" src="https://rladies-sp.org/" width="90%" height="500">
 
+</center>
 
+## Apoio financeiro
 
-![R Consortium Logo](https://www.r-consortium.org/wp-content/uploads/sites/13/2016/09/RConsortium_Horizontal_Pantone.png){alt="R Consortium Logo" width="50%" fig-align="center"}
+![R Consortium Logo](https://www.r-consortium.org/wp-content/uploads/sites/13/2016/09/RConsortium_Horizontal_Pantone.png){width="50%" fig-align="center"}
 
-- Auxílio transporte e alimentação para o evento;
+-   Auxílio transporte e alimentação para o evento;
 
-- Pagamento da professora que acompanha o Gugudadados;
+-   Pagamento da professora que acompanha o Gugudadados;
 
-- Camisetas para equipe de organização;
-
-
+-   Camisetas para equipe de organização;
 
 ## Saiba mais sobre a R-Ladies
 
@@ -98,7 +95,7 @@ Primeira edição em novembro/2022.
 -   R-Ladies São Paulo:
 
     -   Blog: <https://rladies-sp.org/>
-    -   [<i class="fab fa-linkedin"></i> Linkedin](https://www.linkedin.com/company/r-ladies-sao-paulo/)    
+    -   [<i class="fab fa-linkedin"></i> Linkedin](https://www.linkedin.com/company/r-ladies-sao-paulo/)\
     -   [<i class="fab fa-twitter"></i> Twitter](https://twitter.com/RLadiesSaoPaulo)
     -   [<i class="fab fa-instagram"></i> Instagram](https://instagram.com/RLadiesSaoPaulo)
     -   [<i class="fab fa-facebook"></i> Facebook](https://facebook.com/RLadiesSaoPaulo)
@@ -112,3 +109,33 @@ Primeira edição em novembro/2022.
 <script src="https://kit.fontawesome.com/1f72d6921a.js" crossorigin="anonymous"></script>
 ```
 <!-- final font awesome -->
+
+# RECADOS :)
+
+Agora com a Bea!
+
+## Newsletter: Edição focada em atividades da R-Ladies
+
+[![](images/1699909726019.png){fig-align="center"}](https://www.linkedin.com/feed/update/urn:li:linkedInArticle:7129612213127921664/)
+
+<https://www.linkedin.com/feed/update/urn:li:linkedInArticle:7129612213127921664/>
+
+## Bolsas Curso-R 2024
+
+-   Formulário de bolsa de diversidade da Curso-R para 2024 está disponível em: <https://forms.gle/5a6zrCwDadkdMNKw9>
+
+![](img/bolsa-curso-r.png){fig-align="center"}
+
+## Tradução R4DS
+
+[![](img/R4DS.png){fig-align="center"}](https://cienciadedatos.github.io/pt-r4ds/)
+
+<https://cienciadedatos.github.io/pt-r4ds/>
+
+## Grupo de estudos para 2024
+
+-   Interesse: <https://forms.gle/fEAptgHgNXbLTPWy6>
+
+-   Mais informações: <https://github.com/R-Ladies-Sao-Paulo/2024-grupo-de-estudos-r4ds/tree/main#readme>
+
+![](img/grupo de estudos.png){fig-align="center" width="30%"}
