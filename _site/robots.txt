@@ -1,1 +1,0 @@
-Sitemap: https://github.com/R-Ladies-Sao-Paulo/2023-11-pacotes-br/sitemap.xml
